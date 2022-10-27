@@ -1,0 +1,3 @@
+public class ArmorList {
+    Armor testHead = Armor(testHead, head, 0);
+}

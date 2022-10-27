@@ -1,0 +1,22 @@
+public class Player {
+    int hp;
+    int mp;
+    int xp;
+    int level;
+    int gold;
+    int silver;
+    int copper;
+    Armor head;
+    Armor body;
+    Armor legs;
+    Weapon weapon;
+    Shield shield;
+
+    public Player(int hp, int mp, int xp, int level, int gold, int silver, int copper, 
+    Armor head, Armor body, Armor legs, Weapon weapon, Shield shield) {
+
+    }
+
+    
+
+}

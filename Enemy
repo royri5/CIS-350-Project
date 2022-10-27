@@ -1,0 +1,7 @@
+public class Enemy {
+    String enemyType;
+    int hp;
+    int mp;
+    int level;
+
+}

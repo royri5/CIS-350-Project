@@ -1,0 +1,4 @@
+public class Shields {
+    String name;
+    int defense;
+}

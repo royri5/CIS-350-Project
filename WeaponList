@@ -1,0 +1,3 @@
+public class WeaponsList {
+    Weapon testWeapon = Weapon(testWeapon, sword, 0);
+ }

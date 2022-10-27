@@ -1,0 +1,11 @@
+public class Weapons {
+    String name;
+    String weaponType;
+    int damage;
+
+    public Weapon(String n, String wT, int d) {
+        name = n;
+        weaponType = wT;
+        damage = d;
+    }
+}

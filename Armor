@@ -1,0 +1,14 @@
+public class Armor {
+    String name;
+    String slot;
+    int defense;
+    int sellValue;
+
+    public Armor(String n, String s, int d) {
+        name = n;
+        slot = s;
+        defense = d;
+    }
+
+    
+}
