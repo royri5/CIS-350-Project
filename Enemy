@@ -1,7 +1,9 @@
 public class Enemy {
-    String enemyType;
-    int hp;
-    int mp;
-    int level;
+    private String enemyType;
+    private int hp;
+    private int mp;
+    private int level;
+    private int defense;
+    
 
 }

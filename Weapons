@@ -1,7 +1,7 @@
-public class Weapons {
-    String name;
-    String weaponType;
-    int damage;
+public class Weapons extends Items {
+    private String name;
+    private String weaponType;
+    private int damage;
 
     public Weapon(String n, String wT, int d) {
         name = n;

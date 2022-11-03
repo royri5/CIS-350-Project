@@ -1,21 +1,116 @@
 public class Player {
-    int hp;
-    int mp;
-    int xp;
-    int level;
-    int gold;
-    int silver;
-    int copper;
-    Armor head;
-    Armor body;
-    Armor legs;
-    Weapon weapon;
-    Shield shield;
+    private int hp;
+    private int mp;
+    private int xp;
+    private int level;
+    private int gold;
+    private int defense;
+    private Armor head;
+    private Armor body;
+    private Armor legs;
+    private Weapon weapon;
+    private Shield shield;
 
-    public Player(int hp, int mp, int xp, int level, int gold, int silver, int copper, 
+    public Player(int hp, int mp, int xp, int level, int gold, 
     Armor head, Armor body, Armor legs, Weapon weapon, Shield shield) {
 
     }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int h) {
+        hp = h;
+    }
+
+    public int getMp() {
+        return mp;
+    }
+
+    public void setMp(int m) {
+        mp = m;
+    }
+
+    public int getXp() {
+        return xp;
+    }
+
+    public void setXp(int x) {
+        xp = x;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int l) {
+        level = l;
+    }
+
+    public int getGold() {
+        return gold;
+    }
+
+    public void setGold(int g) {
+        gold = g;
+    }
+
+    public Armor getHead() {
+        return head;
+    }
+
+    public void equipHead(Armor h) {
+        head = h;
+    }
+
+    public void unequipHead() {
+        head = null;
+    }
+
+    public Armor getBody() {
+        return body;
+    }
+
+    public void equipBody(Armor b) {
+        body = b;
+    }
+
+    public void unequipBody() {
+        body = null;
+    }
+
+    public Armor getLegs() {
+        return legs;
+    }
+
+    public void equipLegs(Armor l) {
+        legs = l;
+    }
+
+    public void unequipLegs() {
+        legs = null;
+    }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public void equipWeapon(Weapon w) {
+        weapon = w;
+    }
+
+    public Shield getShield() {
+        return shield;
+    }
+
+    public void setShield(Shield s) [
+        shield = s;
+    ]
+
+
+
+
 
     
 

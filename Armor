@@ -1,8 +1,8 @@
-public class Armor {
-    String name;
-    String slot;
-    int defense;
-    int sellValue;
+public class Armor extends Items {
+    private String name;
+    private String slot;
+    private int defense;
+    private int sellValue;
 
     public Armor(String n, String s, int d) {
         name = n;
