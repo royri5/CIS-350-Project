@@ -1,3 +1,69 @@
+import java.util.Random;
+
 public class Dice {
+    private String diceType;
+
+    public Dice(String d) {
+        diceType = d;
+    }
+
+    public String getDiceType() {
+        return diceType;
+    }
+
+    public void setDiceType(String d) {
+        diceType = d;
+    }
+
+    //Should probably be only public, covers all rolls
+    public int roll(String d) {
+        if(d.equals("d4")) {
+            return d4();
+        } else if(d.equals("d6")) {
+            return d6();
+        } else if(d.equals("d8")) {
+            return d8();
+        } else if(d.equals("d10")) {
+            return d10();
+        } else if(d.equals("d12")) {
+            return d12();
+        } else if(d.equals("d20")) {
+            return d20();
+        } else {
+            return -1;
+        }
+    }
+
+    public int d4() {
+        Random n = new Random();
+        return n.nextInt(1, 4);
+    }
+
+    public int d6() {
+        Random n = new Random();
+        return n.nextInt(1, 6);
+    }
+
+    public int d8() {
+        Random n = new Random();
+        return n.nextInt(1,8);
+    }
+
+    public int d10() {
+        Random n = new Random();
+        return n.nextInt(0, 10);
+    }
+
+    public int d12() {
+        Random n = new Random();
+        return n.nextInt(1, 12);
+    }
+
+    public int d20() {
+        Random n = new Random();
+        return n.nextInt(1, 20);
+    }
+
+    
     
 }
