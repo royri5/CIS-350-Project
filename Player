@@ -56,40 +56,103 @@ public class Player {
         gold = g;
     }
 
+    public int getDefense() {
+        return defense;
+    }
+
+    public void addDefense(int d) {
+        defense = defense + d;
+    }
+    
+    public void removeDefense(int d) {
+        if(defense - d != 0) {
+            defense = defense - d;
+        } else {
+            defense = 0;
+        }
+    }
+
     public Armor getHead() {
         return head;
     }
 
-    public void equipHead(Armor h) {
-        head = h;
+    public void equipArmor(Armor a) {
+        if(a.getSlot().equals("Head")) {
+            if(head == null) {
+                head = a;
+                Inventory i = new Inventory();
+                i.getInventory().remove(a);
+                addDefense(a.getDefense());
+            } else {
+                Inventory i = new Inventory();
+                i.getInventory().add(head);
+                removeDefense(head.getDefense());
+                head = a;
+                addDefense(a.getDefense());
+            }
+            //TODO: if item in slot, remove and put in inv
+            //TODO: remove a from inventory
+        } else if(a.getSlot().equals("Body")) {
+            if(body == null) {
+                body = a;
+                Inventory i = new Inventory();
+                i.getInventory().remove(a);
+                addDefense(a.getDefense());
+            } else {
+                Inventory i = new Inventory();
+                i.getInventory().add(body);
+                removeDefense(body.getDefense());
+                body = a;
+                addDefense(a.getDefense());
+            }
+            //TODO: if item in slot, remove and put in inv
+            //TODO: remove a from inventory
+        } else if(a.getSlot().equals("Legs")) {
+            if(legs == null) {
+                legs = a;
+                Inventory i = new Inventory();
+                i.getInventory().remove(a);
+                addDefense(a.getDefense());
+            } else {
+                Inventory i = new Inventory();
+                i.getInventory().add(legs);
+                removeDefense(legs.getDefense());
+                legs = a;
+                addDefense(a.getDefense());
+            }
+            //TODO: if item in slot, remove and put in inv
+            //TODO: remove a from inventory
+        }
     }
 
-    public void unequipHead() {
-        head = null;
+    public void unequipArmor(Armor a) {
+        if(a.getSlot().equals("Head")) {
+            Inventory i = new Inventory();
+            i.getInventory().add(a);
+            head = null;
+            removeDefense(a.getDefense());
+            //TODO: add a to inventory
+        } else if(a.getSlot().equals("Body")) {
+            Inventory i = new Inventory();
+            i.getInventory().add(a);
+            body = null;
+            removeDefense(a.getDefense());
+            //TODO: add a to inventory
+        } else if(a.getSlot().equals("Legs")) {
+            Inventory i = new Inventory();
+            i.getInventory().add(a);
+            legs = null;
+            removeDefense(a.getDefense());
+            //TODO: add a to inventory
+        }
     }
 
     public Armor getBody() {
         return body;
     }
 
-    public void equipBody(Armor b) {
-        body = b;
-    }
-
-    public void unequipBody() {
-        body = null;
-    }
-
     public Armor getLegs() {
         return legs;
-    }
-
-    public void equipLegs(Armor l) {
-        legs = l;
-    }
-
-    public void unequipLegs() {
-        legs = null;
     }
 
     public Weapon getWeapon() {
@@ -104,9 +167,9 @@ public class Player {
         return shield;
     }
 
-    public void setShield(Shield s) [
+    public void setShield(Shield s) {
         shield = s;
-    ]
+    }
 
 
 
