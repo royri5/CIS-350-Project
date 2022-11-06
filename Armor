@@ -2,13 +2,38 @@ public class Armor extends Items {
     private String name;
     private String slot;
     private int defense;
-    private int sellValue;
+    //private int sellValue;
 
     public Armor(String n, String s, int d) {
         name = n;
         slot = s;
         defense = d;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String n) {
+        name = n;
+    }
+
+    public String getSlot() {
+        return slot;
+    }
+
+    public void setSlot(String s) {
+        slot = s;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int d) {
+        defense = d;
+    }
+
 
     
 }
