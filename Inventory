@@ -1,9 +1,35 @@
-public class Inventory {
-    private int slots;
+//import java.util.LinkedList;
+//import java.io.*;
+import java.util.*;
 
-    Items[] inventory;
+public class Inventory {
+    //private int slots = 10;
+
+    /*Items[] inventory;
     inventory = 
     public 
+    */
+    //Items[] inventory = new Items[slots];
+    private ArrayList<Items> inventory = new ArrayList<>();
 
+    public ArrayList<Items> getInventory() {
+        return inventory;
+    }
+    
+    public void addToInventory(Items i) {
+        inventory.add(i);
+    }
+
+    public void removeFromInventory(Items item) {
+        for(int i = 0; i < inventory.size(); i++) {
+            if(inventory.get(i).equals(item)) {
+                inventory.remove(i);
+            }
+        }
+    }
+
+    public void printInv() {
+        System.out.println(inventory);
+    }
 
 }
