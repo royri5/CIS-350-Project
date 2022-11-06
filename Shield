@@ -1,0 +1,25 @@
+public class Shield extends Items {
+    private String name;
+    private int defense;
+
+    public Shield(String n, int d) {
+        name = n;
+        defense = d;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String n) {
+        name = n;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int d) {
+        defense = d;
+    }
+}

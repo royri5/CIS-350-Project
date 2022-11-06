@@ -1,4 +1,0 @@
-public class Shields extends Items {
-    private String name;
-    private int defense;
-}
