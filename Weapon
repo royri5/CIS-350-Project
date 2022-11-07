@@ -5,6 +5,12 @@ public class Weapon extends Items {
     private String weaponType;
     private String damage;
 
+    public Weapon() {
+        name = "N/A";
+        weaponType = "N/A";
+        damage = null;
+    }
+    
     public Weapon(String n, String wT, String d) {
         name = n;
         weaponType = wT;
@@ -28,6 +34,9 @@ public class Weapon extends Items {
     }
 
     public String getDamage() {
+        if(this.equals(null)) {
+            return null;
+        }
         return damage;
     }
 
