@@ -15,53 +15,88 @@ public class Dice {
         diceType = d;
     }
 
-    //Should probably be only public, covers all rolls
-    public int roll(String d) {
-        if(d.equals("d4")) {
+    //Should probably be only public (besides constructor/getDiceType, maybe setDiceType for switching between two and one handed), covers all rolls
+    public int roll() {
+        if(this.getDiceType().equals("d4")) {
             return d4();
-        } else if(d.equals("d6")) {
+        } else if(this.getDiceType().equals("d6")) {
             return d6();
-        } else if(d.equals("d8")) {
+        } else if(this.getDiceType().equals("d8")) {
             return d8();
-        } else if(d.equals("d10")) {
+        } else if(this.getDiceType().equals("d10")) {
             return d10();
-        } else if(d.equals("d12")) {
+        } else if(this.getDiceType().equals("d12")) {
             return d12();
-        } else if(d.equals("d20")) {
+        } else if(this.getDiceType().equals("d20")) {
             return d20();
+        } else if(this.getDiceType().equals("d100")) {
+            return d100();
         } else {
             return -1;
         }
     }
 
-    public int d4() {
+    /**
+     * Returns an integer between 1 and 4
+     * @return int
+     */
+    private int d4() {
         Random n = new Random();
         return n.nextInt(1, 4);
     }
 
-    public int d6() {
+    /**
+     * Returns an integer between 1 and 6
+     * @return int
+     */
+    private int d6() {
         Random n = new Random();
         return n.nextInt(1, 6);
     }
 
-    public int d8() {
+    /**
+     * Returns an integer between 1 and 8
+     * @return int
+     */
+    private int d8() {
         Random n = new Random();
         return n.nextInt(1,8);
     }
 
-    public int d10() {
+    /**
+     * Returns an integer between 0 and 10
+     * @return int
+     */
+    private int d10() {
         Random n = new Random();
         return n.nextInt(0, 10);
     }
 
-    public int d12() {
+    /**
+     * Returns an integer between 1 and 12
+     * @return int
+     */
+    private int d12() {
         Random n = new Random();
         return n.nextInt(1, 12);
     }
 
-    public int d20() {
+    /**
+     * Returns an integer between 1 and 20
+     * @return int
+     */
+    private int d20() {
         Random n = new Random();
         return n.nextInt(1, 20);
+    }
+
+    /**
+     * Returns an integer between 0 and 100
+     * @return int
+     */
+    private int d100() {
+        Random n = new Random();
+        return n.nextInt(0, 100);
     }
 
     
