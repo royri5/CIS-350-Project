@@ -1,6 +1,6 @@
-public class Player {
+public class Player extends Entity{
     private int hp;
-    private int mp;
+    //private int mp;
     private int xp;
     private int level;
     private int gold;
@@ -11,9 +11,35 @@ public class Player {
     private Weapon weapon;
     private Shield shield;
 
-    public Player(int hp, int mp, int xp, int level, int gold, 
-    Armor head, Armor body, Armor legs, Weapon weapon, Shield shield) {
+    public Player() {
+        hp = 100;
+        xp = 0;
+        level = 1;
+        gold = 0;
+        head = null;
+        body = null;
+        legs = null;
+        weapon = null;
+        shield = null;
+        defense = 0;
+    }
 
+    public Player(int h, int x, int l, int g, 
+    Armor he, Armor b, Armor le, Weapon w, Shield s) {
+        hp = h;
+        xp = x;
+        level = l;
+        gold = g;
+        head = he;
+        body = b;
+        legs = le;
+        weapon = w;
+        shield = s;
+        defense = he.getDefense() + b.getDefense() + le.getDefense() + s.getDefense();
+    }
+
+    public Player getPlayer() {
+        return this;
     }
 
     public int getHp() {
@@ -24,13 +50,13 @@ public class Player {
         hp = h;
     }
 
-    public int getMp() {
+    /*public int getMp() {
         return mp;
-    }
+    }*/
 
-    public void setMp(int m) {
+    /*public void setMp(int m) {
         mp = m;
-    }
+    }*/
 
     public int getXp() {
         return xp;
