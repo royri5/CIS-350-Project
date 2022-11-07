@@ -2,6 +2,11 @@ public class Shield extends Items {
     private String name;
     private int defense;
 
+    public Shield() {
+        name = "N/A";
+        defense = 0;
+    }
+    
     public Shield(String n, int d) {
         name = n;
         defense = d;
@@ -16,6 +21,9 @@ public class Shield extends Items {
     }
 
     public int getDefense() {
+        if(this.equals(null)) {
+            return 0;
+        }
         return defense;
     }
 
