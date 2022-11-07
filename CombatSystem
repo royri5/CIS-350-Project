@@ -1,0 +1,21 @@
+public class CombatSystem {
+    //once entity class is made will be universal
+    /*public void weaponAttack(Entity e1, Entity e2) {
+        
+    }*/
+
+    //temp for testing
+    public void weaponAttack(Player p, Enemy e) {
+        Dice d20 = new Dice("d20");
+        Dice playerDamage = new Dice(p.getWeapon().getDamage());
+        //don't remember if d20 can be the same as def
+        //update for crits
+        if(d20.roll() >= e.getDefense()) {
+            e.takeDamage(playerDamage.roll());
+            //remove next line/add test class
+            System.out.println(e.getHp());
+        }
+    }
+
+
+}
