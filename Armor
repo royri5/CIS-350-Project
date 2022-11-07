@@ -4,6 +4,12 @@ public class Armor extends Items {
     private int defense;
     //private int sellValue;
 
+    public Armor() {
+        name = "N/A";
+        slot = "N/A";
+        defense = 0;
+    }
+    
     public Armor(String n, String s, int d) {
         name = n;
         slot = s;
@@ -27,6 +33,9 @@ public class Armor extends Items {
     }
 
     public int getDefense() {
+        if(this.equals(null)) {
+            return 0;
+        }
         return defense;
     }
 
