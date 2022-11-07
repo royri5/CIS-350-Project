@@ -1,9 +1,49 @@
-public class Enemy {
+public class Enemy extends Entity{
     private String enemyType;
     private int hp;
+    private int maxhp;
     private int mp;
     private int level;
     private int defense;
+
+    public String getEnemyType() {
+        return enemyType;
+    }
     
+    public void setEnemyType(String e) {
+        enemyType = e;
+    }
+    //migrate to entity class
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int h) {
+        hp = h;
+    }
+
+    public void takeDamage(int d) {
+        if(hp - d <= 0) {
+            hp = hp - d;
+        } else {
+            hp = 0;
+        }
+    }
+
+    public void gainHealth(int h) {
+        if(hp + h <= maxhp) {
+            hp = hp + h;
+        } else {
+            hp = maxhp;
+        }
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int d) {
+        defense = d;
+    }
 
 }
