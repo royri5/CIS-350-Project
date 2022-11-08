@@ -1,3 +1,135 @@
 public class Entity {
-    
+    private int hp;
+    private int maxhp;
+    private int level;
+    private int defense;
+    private Armor head;
+    private Armor body;
+    private Armor legs;
+    private Weapon weapon;
+    private Shield shield;
+
+    public Entity() {
+        hp = 100;
+        maxhp = 100;
+        level = 1;
+        defense = 0;
+        head = null;
+        body = null;
+        legs = null;
+        weapon = null;
+        shield = null;
+    }
+
+    public Entity getEntity() {
+        return this;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int h) {
+        hp = h;
+    }
+
+    public int getMaxHp() {
+        return maxhp;
+    }
+
+    public void setMaxHp(int h) {
+        maxhp = h;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int l) {
+        level = l;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int d) {
+        defense = d;
+    }
+
+    //may be unneeded
+    public void addDefense(int d) {
+        defense = defense + d;
+    }
+
+    //may be unneeded
+    public void removeDefense(int d) {
+        if(defense - d <= 0) {
+            defense = defense - d;
+        } else {
+            defense = 0;
+        }
+    }
+
+    public Armor getHead() {
+        return head;
+    }
+
+    //Not to be used by player, underlying code for spawning enemies(or testing)
+    public void setHead(Armor h) {
+        if(h.getSlot().equals("Head")) {
+            //head slot is empty already
+            if(head == null) {
+                addDefense(h.getDefense());
+            //head slot is not empty
+            } else {
+                removeDefense(head.getDefense());
+                addDefense(h.getDefense());
+            }
+            head = h;
+        }
+    }
+
+    public Armor getBody() {
+        return body;
+    }
+
+    public void setBody(Armor b) {
+        if(b.getSlot().equals("Body")) {
+            body = b;
+        }
+    }
+
+    public Armor getLegs() {
+        return legs;
+    }
+
+    public void setLegs(Armor l) {
+        if(l.getSlot().equals("Legs")) {
+            legs = l;
+        }
+    }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(Weapon w) {
+        weapon = w;
+    }
+
+    public Shield getShield() {
+        return shield;
+    }
+
+    public void setShield(Shield s) {
+        shield = s;
+    }
+
+
+
+
+
+
+
 }
