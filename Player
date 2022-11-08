@@ -42,13 +42,13 @@ public class Player extends Entity{
         return this;
     }
 
-    public int getHp() {
+    /*public int getHp() {
         return hp;
-    }
+    }*/
 
-    public void setHp(int h) {
+    /*public void setHp(int h) {
         hp = h;
-    }
+    }*/
 
     /*public int getMp() {
         return mp;
@@ -66,12 +66,16 @@ public class Player extends Entity{
         xp = x;
     }
 
-    public int getLevel() {
+    /*public int getLevel() {
         return level;
-    }
+    }*/
 
-    public void setLevel(int l) {
+    /*public void setLevel(int l) {
         level = l;
+    }*/
+
+    public void levelUp() {
+        level = level + 1;
     }
 
     public int getGold() {
@@ -82,37 +86,38 @@ public class Player extends Entity{
         gold = g;
     }
 
-    public int getDefense() {
+    /*public int getDefense() {
         return defense;
-    }
+    }*/
 
-    public void addDefense(int d) {
+    /*public void addDefense(int d) {
         defense = defense + d;
-    }
+    }*/
     
-    public void removeDefense(int d) {
+    /*public void removeDefense(int d) {
         if(defense - d != 0) {
             defense = defense - d;
         } else {
             defense = 0;
         }
-    }
+    }*/
 
-    public Armor getHead() {
+    /*public Armor getHead() {
         return head;
-    }
+    }*/
 
-    public void equipArmor(Armor a) {
+    public void equipArmor(Armor a, Inventory i) {
         if(a.getSlot().equals("Head")) {
             if(head == null) {
                 head = a;
-                Inventory i = new Inventory();
+                //Inventory i = new Inventory();
                 i.getInventory().remove(a);
                 addDefense(a.getDefense());
             } else {
-                Inventory i = new Inventory();
+                /*Inventory i = new Inventory();
                 i.getInventory().add(head);
-                removeDefense(head.getDefense());
+                removeDefense(head.getDefense());*/
+                unequipArmor(head, i);
                 head = a;
                 addDefense(a.getDefense());
             }
@@ -121,13 +126,14 @@ public class Player extends Entity{
         } else if(a.getSlot().equals("Body")) {
             if(body == null) {
                 body = a;
-                Inventory i = new Inventory();
+                //Inventory i = new Inventory();
                 i.getInventory().remove(a);
                 addDefense(a.getDefense());
             } else {
-                Inventory i = new Inventory();
+                /*Inventory i = new Inventory();
                 i.getInventory().add(body);
-                removeDefense(body.getDefense());
+                removeDefense(body.getDefense());*/
+                unequipArmor(body, i);
                 body = a;
                 addDefense(a.getDefense());
             }
@@ -136,13 +142,14 @@ public class Player extends Entity{
         } else if(a.getSlot().equals("Legs")) {
             if(legs == null) {
                 legs = a;
-                Inventory i = new Inventory();
+                //Inventory i = new Inventory();
                 i.getInventory().remove(a);
                 addDefense(a.getDefense());
             } else {
-                Inventory i = new Inventory();
+                /*Inventory i = new Inventory();
                 i.getInventory().add(legs);
-                removeDefense(legs.getDefense());
+                removeDefense(legs.getDefense());*/
+                unequipArmor(legs, i);
                 legs = a;
                 addDefense(a.getDefense());
             }
@@ -151,21 +158,21 @@ public class Player extends Entity{
         }
     }
 
-    public void unequipArmor(Armor a) {
+    public void unequipArmor(Armor a, Inventory i) {
         if(a.getSlot().equals("Head")) {
-            Inventory i = new Inventory();
+            //Inventory i = new Inventory();
             i.getInventory().add(a);
             head = null;
             removeDefense(a.getDefense());
             //TODO: add a to inventory
         } else if(a.getSlot().equals("Body")) {
-            Inventory i = new Inventory();
+            //Inventory i = new Inventory();
             i.getInventory().add(a);
             body = null;
             removeDefense(a.getDefense());
             //TODO: add a to inventory
         } else if(a.getSlot().equals("Legs")) {
-            Inventory i = new Inventory();
+            //Inventory i = new Inventory();
             i.getInventory().add(a);
             legs = null;
             removeDefense(a.getDefense());
@@ -173,28 +180,42 @@ public class Player extends Entity{
         }
     }
 
-    public Armor getBody() {
+    /*public Armor getBody() {
         return body;
-    }
+    }*/
 
-    public Armor getLegs() {
+    /*public Armor getLegs() {
         return legs;
-    }
+    }*/
 
-    public Weapon getWeapon() {
+    /*public Weapon getWeapon() {
         return weapon;
+    }*/
+
+    public void equipWeapon(Weapon w, Inventory i) {
+        if(weapon != null) {
+            weapon = w;
+            i.getInventory().remove(w);
+        } else {
+            i.getInventory().add(weapon);
+            weapon = w;
+            i.getInventory().remove(w);
+        }
+        
     }
 
-    public void equipWeapon(Weapon w) {
-        weapon = w;
+    public void unequipWeapon(Weapon w, Inventory i) {
+        weapon = null;
+
     }
 
-    public Shield getShield() {
-        return shield;
-    }
-
-    public void setShield(Shield s) {
+    public void equipShield(Shield s, Inventory i) {
         shield = s;
+        addDefense(s.getDefense());
+    }
+
+    public void unequipShield(Shield s, Inventory i) {
+
     }
 
 
