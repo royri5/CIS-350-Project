@@ -1,27 +1,18 @@
 public class Armor extends Items {
-    private String name;
     private String slot;
     private int defense;
-    //private int sellValue;
+
 
     public Armor() {
-        name = "N/A";
-        slot = "N/A";
+        setName("N/A");
+        slot = "";
         defense = 0;
     }
-    
+
     public Armor(String n, String s, int d) {
-        name = n;
+        setName(n);
         slot = s;
         defense = d;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String n) {
-        name = n;
     }
 
     public String getSlot() {
@@ -29,18 +20,32 @@ public class Armor extends Items {
     }
 
     public void setSlot(String s) {
-        slot = s;
+        switch(s) {
+            case "Head": slot = s;
+            break;
+            case "Body": slot = s;
+            break;
+            case "Legs": slot = s;
+            break;
+            default: slot = null;
+            break;
+        } 
     }
 
     public int getDefense() {
         if(this.equals(null)) {
             return 0;
+        } else {
+            return defense;
         }
-        return defense;
     }
 
     public void setDefense(int d) {
-        defense = d;
+        if(d >= 0) {
+            defense = d;
+        } else {
+            defense = 0;
+        }
     }
 
 
