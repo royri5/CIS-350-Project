@@ -1,10 +1,6 @@
 public class Player extends Entity{
-    private int hp;
-    //private int mp;
     private int xp;
-    private int level;
     private int gold;
-    private int defense;
     private Armor head;
     private Armor body;
     private Armor legs;
@@ -12,211 +8,431 @@ public class Player extends Entity{
     private Shield shield;
 
     public Player() {
-        hp = 100;
+        //hp = 100;
         xp = 0;
-        level = 1;
+        //level = 1;
         gold = 0;
         head = null;
         body = null;
         legs = null;
         weapon = null;
         shield = null;
-        defense = 0;
+        //defense = 0;
     }
 
     public Player(int h, int x, int l, int g, 
     Armor he, Armor b, Armor le, Weapon w, Shield s) {
-        hp = h;
+        //hp = h;
         xp = x;
-        level = l;
+        //level = l;
         gold = g;
         head = he;
         body = b;
         legs = le;
         weapon = w;
         shield = s;
-        defense = he.getDefense() + b.getDefense() + le.getDefense() + s.getDefense();
+        //defense = he.getDefense() + b.getDefense() + le.getDefense() + s.getDefense();
     }
 
     public Player getPlayer() {
         return this;
     }
 
-    /*public int getHp() {
-        return hp;
-    }*/
-
-    /*public void setHp(int h) {
-        hp = h;
-    }*/
-
-    /*public int getMp() {
-        return mp;
-    }*/
-
-    /*public void setMp(int m) {
-        mp = m;
-    }*/
-
+    //may be phased out alongside levels
     public int getXp() {
         return xp;
     }
 
-    public void setXp(int x) {
-        xp = x;
+    //^
+    public void setXp(int newxp) {
+        //xp cannot be less than 0
+        if(newxp >= 0) {
+            xp = newxp;
+        //if newxp is less than 0
+        //default to 0
+        } else {
+            xp = 0;
+        }
     }
 
-    /*public int getLevel() {
-        return level;
-    }*/
-
-    /*public void setLevel(int l) {
-        level = l;
-    }*/
-
+    //may be phased out
     public void levelUp() {
-        level = level + 1;
+        setLevel(getLevel() + 1);
     }
 
+    //may be phased out alongside NPCs
     public int getGold() {
         return gold;
     }
 
-    public void setGold(int g) {
-        gold = g;
+    //^
+    public void setGold(int newgold) {
+        //cannot have debt
+        if(newgold >= 0) {
+            gold = newgold;
+        //if newgold is negative
+        //default to 0
+        } else {
+            gold = 0;
+        }
     }
 
-    /*public int getDefense() {
-        return defense;
-    }*/
-
-    /*public void addDefense(int d) {
-        defense = defense + d;
-    }*/
-    
-    /*public void removeDefense(int d) {
-        if(defense - d != 0) {
-            defense = defense - d;
-        } else {
-            defense = 0;
+    //player funtionality for equipping armor
+    //TODO: check if armor is in inv
+    public void equipArmor(Armor armor, Inventory inv) {
+        //cannot equip nothing
+        if(armor == null) {
+            return;
         }
-    }*/
-
-    /*public Armor getHead() {
-        return head;
-    }*/
-
-    public void equipArmor(Armor a, Inventory i) {
-        if(a.getSlot().equals("Head")) {
+        //if armor's slot is head
+        if(armor.getSlot().equals("Head")) {
+            //if head slot is empty
             if(head == null) {
-                head = a;
-                //Inventory i = new Inventory();
-                i.getInventory().remove(a);
-                addDefense(a.getDefense());
+                //updates player head slot
+                head = armor;
+                //removes armor from inv
+                inv.getInventory().remove(armor);
+                //updates player defense
+                addDefense(armor.getDefense());
+            //if head slot is not empty
             } else {
-                /*Inventory i = new Inventory();
-                i.getInventory().add(head);
-                removeDefense(head.getDefense());*/
-                unequipArmor(head, i);
-                head = a;
-                addDefense(a.getDefense());
+                //unequips current head armor
+                unequipArmor(head, inv);
+                //updates player head slot
+                head = armor;
+                //removes armor from inv
+                inv.getInventory().remove(armor);
+                //updates player defense
+                addDefense(armor.getDefense());
             }
-            //TODO: if item in slot, remove and put in inv
-            //TODO: remove a from inventory
-        } else if(a.getSlot().equals("Body")) {
+        //if armor's slot is body
+        } else if(armor.getSlot().equals("Body")) {
+            //if the body slot is empty
             if(body == null) {
-                body = a;
-                //Inventory i = new Inventory();
-                i.getInventory().remove(a);
-                addDefense(a.getDefense());
+                //updates player body slot
+                body = armor;
+                //removes armor from inv
+                inv.getInventory().remove(armor);
+                //updates player defense
+                addDefense(armor.getDefense());
+            //if body slot is not empty
             } else {
-                /*Inventory i = new Inventory();
-                i.getInventory().add(body);
-                removeDefense(body.getDefense());*/
-                unequipArmor(body, i);
-                body = a;
-                addDefense(a.getDefense());
+                //unequips current body armor
+                unequipArmor(body, inv);
+                //updates player body slot
+                body = armor;
+                //removes armor from inv
+                inv.getInventory().remove(armor);
+                //updates player defense
+                addDefense(armor.getDefense());
             }
-            //TODO: if item in slot, remove and put in inv
-            //TODO: remove a from inventory
-        } else if(a.getSlot().equals("Legs")) {
+        //if armor's slot is legs
+        } else if(armor.getSlot().equals("Legs")) {
+            //if the legs slot is empty
             if(legs == null) {
-                legs = a;
-                //Inventory i = new Inventory();
-                i.getInventory().remove(a);
-                addDefense(a.getDefense());
+                //updates the player legs slot
+                legs = armor;
+                //removes armor from inv
+                inv.getInventory().remove(armor);
+                //updates player defense
+                addDefense(armor.getDefense());
+            //if legs slot is not empty
             } else {
-                /*Inventory i = new Inventory();
-                i.getInventory().add(legs);
-                removeDefense(legs.getDefense());*/
-                unequipArmor(legs, i);
-                legs = a;
-                addDefense(a.getDefense());
+                //unequips current legs armor
+                unequipArmor(legs, inv);
+                //updates player legs slot
+                legs = armor;
+                //removes armor from inv
+                inv.getInventory().remove(armor);
+                //updates player defense
+                addDefense(armor.getDefense());
             }
-            //TODO: if item in slot, remove and put in inv
-            //TODO: remove a from inventory
         }
     }
 
-    public void unequipArmor(Armor a, Inventory i) {
-        if(a.getSlot().equals("Head")) {
-            //Inventory i = new Inventory();
-            i.getInventory().add(a);
-            head = null;
-            removeDefense(a.getDefense());
-            //TODO: add a to inventory
-        } else if(a.getSlot().equals("Body")) {
-            //Inventory i = new Inventory();
-            i.getInventory().add(a);
-            body = null;
-            removeDefense(a.getDefense());
-            //TODO: add a to inventory
-        } else if(a.getSlot().equals("Legs")) {
-            //Inventory i = new Inventory();
-            i.getInventory().add(a);
-            legs = null;
-            removeDefense(a.getDefense());
-            //TODO: add a to inventory
+    //player functionality form unequipping armor
+    public void unequipArmor(Armor armor, Inventory inv) {
+        //cannot unequip nothing
+        if(armor == null) {
+            return;
+        }
+        //if armor's slot is head
+        if(armor.getSlot().equals("Head")) {
+            //verifies armor is actually equipped
+            if(head.equals(armor)) {
+                //updates player head slot
+                head = null;
+                //adds armor to inv
+                inv.getInventory().add(armor);
+                //updates player defense
+                removeDefense(armor.getDefense());
+            //cannot unequp armor that isn't equipped
+            } else {
+                return;
+            }
+        //if armor's slot is body
+        } else if(armor.getSlot().equals("Body")) {
+            //verifies armor is actually equipped
+            if(body.equals(armor)) {
+                //updates player body slot
+                body = null;
+                //adds armor to inv
+                inv.getInventory().add(armor);
+                //updates player defense
+                removeDefense(armor.getDefense());
+            //cannot unequip armor that isn't equipped
+            } else {
+                return;
+            }
+        //if armor's slot is legs
+        } else if(armor.getSlot().equals("Legs")) {
+            //verifies armor is actually equipped
+            if(legs.equals(armor)) {
+                //updates player legs slot
+                legs = null;
+                //adds armor to inv
+                inv.getInventory().add(armor);
+                //updates player defense
+                removeDefense(armor.getDefense());
+            //cannot unequip armor that isn't equipped
+            } else {
+                return;
+            }
         }
     }
 
-    /*public Armor getBody() {
-        return body;
-    }*/
-
-    /*public Armor getLegs() {
-        return legs;
-    }*/
-
-    /*public Weapon getWeapon() {
-        return weapon;
-    }*/
-
-    public void equipWeapon(Weapon w, Inventory i) {
-        if(weapon != null) {
-            weapon = w;
-            i.getInventory().remove(w);
+    //player functionality for equipping weapons
+    //TODO: check if weapon is in inv
+    public void equipWeapon(Weapon newWeapon, Inventory inv) {
+        //cannot equip nothing
+        if(newWeapon == null) {
+            return;
+        }
+        //if weapon slot is empty
+        if(weapon == null) {
+            //update player weapon slot
+            weapon = newWeapon;
+            //remove newWeapon from inv
+            inv.getInventory().remove(newWeapon);
+        //if weapon slot is not empty
         } else {
-            i.getInventory().add(weapon);
-            weapon = w;
-            i.getInventory().remove(w);
+            //unequips current weapon
+            unequipWeapon(weapon, inv);
+            //updates player weapon slot
+            weapon = newWeapon;
+            //remove newWeapon from inv
+            inv.getInventory().remove(newWeapon);
         }
         
     }
 
-    public void unequipWeapon(Weapon w, Inventory i) {
-        weapon = null;
-
+    //player functionality for unequipping weapons
+    public void unequipWeapon(Weapon oldWeapon, Inventory inv) {
+        //cannot unequip nothing
+        if(oldWeapon == null) {
+            return;
+        }
+        //verifies weapon is actually equipped
+        if(weapon.equals(oldWeapon)) {
+            //update player weapon slot
+            weapon = null;
+            //adds weapon to inv
+            inv.getInventory().add(oldWeapon);
+        //cannot unequip weapon that isn't equipped
+        } else {
+            return;
+        }
+    }
+    
+    //player functionality for equipping shields
+    //TODO: check if newShield is in inv
+    public void equipShield(Shield newShield, Inventory inv) {
+        //cannot equip nothing
+        if(newShield == null) {
+            return;
+        }
+        //if shield slot is empty
+        if(shield == null) {
+            //update player shield slot
+            shield = newShield;
+            //remove newShield from inv
+            inv.getInventory().remove(newShield);
+            //updates player defense
+            addDefense(newShield.getDefense());
+        //if shield slot is not empty
+        } else {
+            //unequips current shield
+            unequipShield(shield, inv);
+            //updates player shield slot
+            shield = newShield;
+            //remove newShield from inv
+            inv.getInventory().remove(newShield);
+            //updates player defense
+            addDefense(newShield.getDefense());
+        }
     }
 
-    public void equipShield(Shield s, Inventory i) {
-        shield = s;
-        addDefense(s.getDefense());
+    //player functionality for unequipping shields
+    public void unequipShield(Shield oldShield, Inventory inv) {
+        //cannot unequip nothing
+        if(oldShield == null) {
+            return;
+        }
+        //verifies oldShield is actually equipped
+        if(shield.equals(oldShield)) {
+            //update player shield slot
+            shield = null;
+            //adds oldShield to inv
+            inv.getInventory().add(oldShield);
+            //update player defense
+            removeDefense(oldShield.getDefense());
+        //cannot unequip shield that isn't equipped
+        } else {
+            return;
+        }
     }
 
-    public void unequipShield(Shield s, Inventory i) {
-
+    public Armor getHead() {
+        return head;
     }
+
+    public Armor getBody() {
+        return body;
+    }
+
+    public Armor getLegs() {
+        return legs;
+    }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public Shield getShield() {
+        return shield;
+    }
+    
+    
+
+    //Not to be used by player, underlying code for testing(does not manipulate inventory)
+    public void setHead(Armor armor) {
+        //set head slot to null
+        if(armor == null) {
+            //head slot is not empty
+            if(head != null) {
+                //update player defense
+                removeDefense(head.getDefense());
+                //update player head slot
+                head = null;
+            }
+        }
+        //can only set head slot to head armor
+        if(armor.getSlot().equals("Head")) {
+            //head slot is empty
+            if(head == null) {
+                //update player head slot
+                head = armor;
+                //update player defense
+                addDefense(armor.getDefense());
+            //head slot is not empty
+            } else {
+                //update player defense
+                removeDefense(head.getDefense());
+                addDefense(armor.getDefense());
+                //update player head slot
+                head = armor;
+            }
+        }
+    }
+
+    //Not to be used by player, underlying code for testing(does not manipulate inventory)
+    public void setBody(Armor armor) {
+        //set body slot to null
+        if(armor == null) {
+            //body slot is not empty
+            if(body != null) {
+                //update player defense
+                removeDefense(body.getDefense());
+                //update player body slot
+                body = null;
+            }
+        }
+        //can only set body slot to body armor
+        if(armor.getSlot().equals("Body")) {
+            //body slot is empty
+            if(body == null) {
+                //update player body slot
+                body = armor;
+                //update player defense
+                addDefense(armor.getDefense());
+            //body slot is not empty
+            } else {
+                //update player defense
+                removeDefense(body.getDefense());
+                addDefense(armor.getDefense());
+                //update player body slot
+                body = armor;
+            }
+        }
+    }
+
+    //Not to be used by player, underlying code for testing(does not manipulate inventory)
+    public void setLegs(Armor armor) {
+        //set legs slot to null
+        if(armor == null) {
+            //legs slot is not empty
+            if(legs != null) {
+                //update player defense
+                removeDefense(legs.getDefense());
+                //update player legs slot
+                legs = null;
+            }
+        }
+        //can only set legs slot to legs armor
+        if(armor.getSlot().equals("Legs")) {
+            //legs slot is empty
+            if(legs == null) {
+                //update player legs slot
+                legs = armor;
+                //update player defense
+                addDefense(armor.getDefense());
+            //legs slot is not empty
+            } else {
+                //update player defense
+                removeDefense(legs.getDefense());
+                addDefense(armor.getDefense());
+                //update player legs slot
+                legs = armor;
+            }
+        }
+    }
+
+    //Not to be used by player, underlying code for testing(does not manipulate inventory)
+    public void setWeapon(Weapon newWeapon) {
+        //updates player weapon slot
+        weapon = newWeapon;
+        //TODO: implement damage increase for two handing
+    }
+
+    //Not to be used by player, underlying code for testing(does not manipulate inventory)
+    public void setShield(Shield newShield) {
+        //shield slot is empty
+        if(shield == null) {
+            //update player shield slot
+            shield = newShield;
+            //update player defense
+            addDefense(newShield.getDefense());
+        //shield slot is not empty
+        } else {
+            //update player defense
+            removeDefense(shield.getDefense());
+            addDefense(newShield.getDefense());
+            //update player shield slot
+            shield = newShield;
+        }
+    }
+
+
 
 
 
