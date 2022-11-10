@@ -3,6 +3,10 @@ import java.util.Random;
 public class Dice {
     private String diceType;
 
+    public Dice() {
+
+    }
+
     public Dice(String d) {
         diceType = d;
     }
@@ -40,7 +44,7 @@ public class Dice {
      * Returns an integer between 1 and 4
      * @return int
      */
-    private int d4() {
+    public int d4() {
         Random n = new Random();
         return n.nextInt(1, 4);
     }
@@ -49,7 +53,7 @@ public class Dice {
      * Returns an integer between 1 and 6
      * @return int
      */
-    private int d6() {
+    public int d6() {
         Random n = new Random();
         return n.nextInt(1, 6);
     }
@@ -58,7 +62,7 @@ public class Dice {
      * Returns an integer between 1 and 8
      * @return int
      */
-    private int d8() {
+    public int d8() {
         Random n = new Random();
         return n.nextInt(1,8);
     }
@@ -67,7 +71,7 @@ public class Dice {
      * Returns an integer between 0 and 10
      * @return int
      */
-    private int d10() {
+    public int d10() {
         Random n = new Random();
         return n.nextInt(0, 10);
     }
@@ -76,7 +80,7 @@ public class Dice {
      * Returns an integer between 1 and 12
      * @return int
      */
-    private int d12() {
+    public int d12() {
         Random n = new Random();
         return n.nextInt(1, 12);
     }
@@ -85,7 +89,7 @@ public class Dice {
      * Returns an integer between 1 and 20
      * @return int
      */
-    private int d20() {
+    public int d20() {
         Random n = new Random();
         return n.nextInt(1, 20);
     }
@@ -94,7 +98,7 @@ public class Dice {
      * Returns an integer between 0 and 100
      * @return int
      */
-    private int d100() {
+    public int d100() {
         Random n = new Random();
         return n.nextInt(0, 100);
     }
