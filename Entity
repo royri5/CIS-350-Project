@@ -3,128 +3,156 @@ public class Entity {
     private int maxhp;
     private int level;
     private int defense;
-    private Armor head;
-    private Armor body;
-    private Armor legs;
-    private Weapon weapon;
-    private Shield shield;
+    //private String damage;
 
+    //base constructor
     public Entity() {
         hp = 100;
         maxhp = 100;
         level = 1;
         defense = 0;
-        head = null;
-        body = null;
-        legs = null;
-        weapon = null;
-        shield = null;
     }
 
     public Entity getEntity() {
         return this;
     }
 
+    /*public String getDamage() {
+        return damage;
+    }*/
+
+    /*public void setDamage(String d) {
+        damage = d;
+    }*/
+
     public int getHp() {
         return hp;
     }
 
-    public void setHp(int h) {
-        hp = h;
+    //set hp between 1 and max (cannot die from this)
+    public void setHp(int newHp) {
+        //checks if newHp is greater than maxhp
+        //checks if newHp is at least 1
+        if(newHp <= maxhp && newHp > 0) {
+            hp = newHp;
+        //in the case that newHp is greater than max
+        //set hp to max
+        } else if(newHp > maxhp) {
+            hp = maxhp;
+        //if newHp is less than 1 set hp to 1
+        } else {
+            hp = 1;
+        }
     }
 
     public int getMaxHp() {
         return maxhp;
     }
 
-    public void setMaxHp(int h) {
-        maxhp = h;
+    public void setMaxHp(int newMax) {
+        //checks that newMax is a positive integer
+        if(newMax > 0) {
+            //as long as newMax is greater than the
+            //current hp, update maxhp
+            if(hp <= newMax) {
+                maxhp = newMax;
+            //if hp is greater than newMax
+            //lower hp to meet the newMax
+            } else {
+                hp = newMax;
+                maxhp = newMax;
+            }
+        }
     }
 
+    //method to be called in combatSystem
+    public void takeDamage(int damage) {
+        //check if entity dies
+        if(hp - damage > 0) {
+            hp -= damage;
+        //entity dies
+        } else {
+            hp = 0;
+            //TODO: implement player/enemy death
+            //TODO: end combat(if 1v1)
+        }
+    }
+
+    //method to be called in combatSystem
+    public void gainHealth(int heal) {
+        //checks if heal is negative or 0
+        if(heal > 0) {
+            //checks if heal goes over maxhp
+            if(hp + heal <= maxhp) {
+                hp += heal;
+            //if healing goes over maxhp
+            //hp sets to maxhp
+            } else {
+                hp = maxhp;
+            }
+        }
+
+    }
+
+    //may be removed
     public int getLevel() {
         return level;
     }
 
-    public void setLevel(int l) {
-        level = l;
+    //may be removed 
+    public void setLevel(int newlvl) {
+        //newlvl must be positive integer
+        if(newlvl > 0) {
+            level = newlvl;
+        //if newlvl is not a positive integer
+        //default to 1
+        } else {
+            level = 1;
+        }
     }
 
     public int getDefense() {
         return defense;
     }
 
-    public void setDefense(int d) {
-        defense = d;
-    }
-
-    //may be unneeded
-    public void addDefense(int d) {
-        defense = defense + d;
-    }
-
-    //may be unneeded
-    public void removeDefense(int d) {
-        if(defense - d <= 0) {
-            defense = defense - d;
+    public void setDefense(int newDef) {
+        //newDef must be at least 0
+        if(newDef >= 0) {
+            defense = newDef;
+        //if newDef is negative
+        //default to 0
         } else {
             defense = 0;
         }
     }
 
-    public Armor getHead() {
-        return head;
-    }
-
-    //Not to be used by player, underlying code for spawning enemies(or testing)
-    public void setHead(Armor h) {
-        if(h.getSlot().equals("Head")) {
-            //head slot is empty already
-            if(head == null) {
-                addDefense(h.getDefense());
-            //head slot is not empty
-            } else {
-                removeDefense(head.getDefense());
-                addDefense(h.getDefense());
-            }
-            head = h;
+    //may be unneeded
+    //called when equipping armor/shields
+    //called if buffs are implemented
+    public void addDefense(int def) {
+        //can't add 0 or negative defense
+        if(def > 0) {
+            defense += def;
         }
     }
 
-    public Armor getBody() {
-        return body;
-    }
-
-    public void setBody(Armor b) {
-        if(b.getSlot().equals("Body")) {
-            body = b;
+    //may be unneeded
+    //called when equipping/unequipping armor/shields
+    //called if debuffs are implemented
+    public void removeDefense(int def) {
+        //defense cannot go lower than 0
+            //TODO: (diff method/class) if debuffs are implemented
+            //remove them upon end of combat to avoid exploits
+        if(defense - def >= 0) {
+            defense -= def;
+        //if defense is lowered below 0
+        //default to 0
+        } else {
+            defense = 0;
         }
     }
 
-    public Armor getLegs() {
-        return legs;
-    }
-
-    public void setLegs(Armor l) {
-        if(l.getSlot().equals("Legs")) {
-            legs = l;
-        }
-    }
-
-    public Weapon getWeapon() {
-        return weapon;
-    }
-
-    public void setWeapon(Weapon w) {
-        weapon = w;
-    }
-
-    public Shield getShield() {
-        return shield;
-    }
-
-    public void setShield(Shield s) {
-        shield = s;
-    }
+    
 
 
 
