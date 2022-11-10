@@ -1,34 +1,28 @@
 public class Weapon extends Items {
-    private String name;
-
     //Weapon types: Sword, Axe, etc.
+
+    //may not be needed
     private String weaponType;
     private String damage;
 
     public Weapon() {
-        name = "N/A";
+        setName("N/A");
         weaponType = "N/A";
-        damage = null;
+        setDamage(null);
     }
-    
+
     public Weapon(String n, String wT, String d) {
-        name = n;
+        setName(n);
         weaponType = wT;
-        damage = d;
+        setDamage(d);
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String n) {
-        name = n;
-    }
-
+    //may not be needed
     public String getWeaponType() {
         return weaponType;
     }
 
+    //^
     public void setWeaponType(String t) {
         weaponType = t;
     }
@@ -36,12 +30,26 @@ public class Weapon extends Items {
     public String getDamage() {
         if(this.equals(null)) {
             return null;
+        } else {
+            return damage;
         }
-        return damage;
     }
 
     public void setDamage(String d) {
-        damage = d;
+        switch(d) {
+            case "d4": damage = d; 
+            break;
+            case "d6": damage = d;
+            break;
+            case "d8": damage = d;
+            break;
+            case "d10": damage = d;
+            break;
+            case "d12": damage = d;
+            break;
+            default: damage = null;
+            break;
+        }
     }
 
 }
