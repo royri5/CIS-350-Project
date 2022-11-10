@@ -1,33 +1,29 @@
 public class Shield extends Items {
-    private String name;
     private int defense;
 
     public Shield() {
-        name = "N/A";
+        setName("N/A");
         defense = 0;
     }
-    
+
     public Shield(String n, int d) {
-        name = n;
-        defense = d;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String n) {
-        name = n;
+        setName(n);
+        setDefense(d);
     }
 
     public int getDefense() {
         if(this.equals(null)) {
             return 0;
+        } else {
+            return defense;
         }
-        return defense;
     }
 
     public void setDefense(int d) {
-        defense = d;
+        if(d >= 0) {
+            defense = d;
+        } else {
+            defense = 0;
+        }
     }
 }
