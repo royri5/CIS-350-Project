@@ -22,14 +22,6 @@ public class Entity {
         return this;
     }
 
-    /*public String getDamage() {
-        return damage;
-    }*/
-
-    /*public void setDamage(String d) {
-        damage = d;
-    }*/
-
     public int getHp() {
         return hp;
     }
@@ -71,10 +63,10 @@ public class Entity {
     }
 
     //method to be called in combatSystem
-    public void takeDamage(int damage) {
+    public void takeDamage(int dmg) {
         //check if entity dies
-        if(hp - damage > 0) {
-            hp -= damage;
+        if(hp - dmg > 0) {
+            hp -= dmg;
         //entity dies
         } else {
             hp = 0;
@@ -161,8 +153,8 @@ public class Entity {
         return damage;
     }
 
-    public void setDamage(String d) {
-        switch(d) {
+    public void setDamage(String dmg) {
+        switch(dmg) {
             case "d4": damage = "d4";
             break;
             case "d6": damage = "d6";
