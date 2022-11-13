@@ -3,19 +3,13 @@
 import java.util.*;
 
 public class Inventory {
-    //private int slots = 10;
-
-    /*Items[] inventory;
-    inventory = 
-    public 
-    */
-    //Items[] inventory = new Items[slots];
+    
     private ArrayList<Items> inventory = new ArrayList<>();
 
     public ArrayList<Items> getInventory() {
         return inventory;
     }
-    
+
     public void addToInventory(Items i) {
         inventory.add(i);
     }
