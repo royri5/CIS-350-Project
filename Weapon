@@ -11,10 +11,10 @@ public class Weapon extends Items {
         setDamage(null);
     }
 
-    public Weapon(String n, String wT, String d) {
-        setName(n);
+    public Weapon(String name, String wT, String dmg) {
+        setName(name);
         weaponType = wT;
-        setDamage(d);
+        setDamage(dmg);
     }
 
     //may not be needed
@@ -23,8 +23,8 @@ public class Weapon extends Items {
     }
 
     //^
-    public void setWeaponType(String t) {
-        weaponType = t;
+    public void setWeaponType(String wT) {
+        weaponType = wT;
     }
 
     public String getDamage() {
@@ -35,17 +35,17 @@ public class Weapon extends Items {
         }
     }
 
-    public void setDamage(String d) {
-        switch(d) {
-            case "d4": damage = d; 
+    public void setDamage(String dmg) {
+        switch(dmg) {
+            case "d4": damage = dmg; 
             break;
-            case "d6": damage = d;
+            case "d6": damage = dmg;
             break;
-            case "d8": damage = d;
+            case "d8": damage = dmg;
             break;
-            case "d10": damage = d;
+            case "d10": damage = dmg;
             break;
-            case "d12": damage = d;
+            case "d12": damage = dmg;
             break;
             default: damage = null;
             break;
