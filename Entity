@@ -3,14 +3,19 @@ public class Entity {
     private int maxhp;
     private int level;
     private int defense;
+    private String damage;
+
+    //implement damage
     //private String damage;
 
     //base constructor
     public Entity() {
-        hp = 100;
-        maxhp = 100;
-        level = 1;
-        defense = 0;
+        setHp(100);
+        setMaxHp(100);
+        setLevel(1);
+        setDefense(0);
+        setDamage("");
+        
     }
 
     public Entity getEntity() {
@@ -149,6 +154,27 @@ public class Entity {
         //default to 0
         } else {
             defense = 0;
+        }
+    }
+
+    public String getDamage() {
+        return damage;
+    }
+
+    public void setDamage(String d) {
+        switch(d) {
+            case "d4": damage = "d4";
+            break;
+            case "d6": damage = "d6";
+            break;
+            case "d8": damage = "d8";
+            break;
+            case "d10": damage = "d10";
+            break;
+            case "d12": damage = "d12";
+            break;
+            default: damage = "";
+            break;
         }
     }
 
