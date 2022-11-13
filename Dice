@@ -36,7 +36,8 @@ public class Dice {
         } else if(this.getDiceType().equals("d100")) {
             return d100();
         } else {
-            return -1;
+            //unarmed
+            return 1;
         }
     }
 
