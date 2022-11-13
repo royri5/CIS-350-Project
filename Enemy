@@ -2,6 +2,12 @@ public class Enemy extends Entity{
     private String enemyType;
 
     public Enemy() {
+        setHp(100);
+        setMaxHp(100);
+        setLevel(1);
+        setDefense(0);
+        setDamage("");
+        setEnemyType("");
 
     }
 
@@ -10,8 +16,39 @@ public class Enemy extends Entity{
     }
     
     //may be unecessary/phased out
-    public void setEnemyType(String e) {
-        enemyType = e;
+    public void setEnemyType(String type) {
+        switch(type) {
+            case "Aberration": enemyType = "Aberration";
+            break;
+            case "Beast": enemyType = "Beast";
+            break;
+            case "Celestial": enemyType = "Celestial";
+            break;
+            case "Construct": enemyType = "Construct";
+            break;
+            case "Dragon": enemyType = "Dragon";
+            break;
+            case "Elemental": enemyType = "Elemental";
+            break;
+            case "Fey": enemyType = "Fey";
+            break;
+            case "Fiend": enemyType = "Fiend";
+            break;
+            case "Giant": enemyType = "Giant";
+            break;
+            case "Humanoid": enemyType = "Humanoid";
+            break;
+            case "Monstrosity": enemyType = "Monstrosity";
+            break;
+            case "Ooze": enemyType = "Ooze";
+            break;
+            case "Plant": enemyType = "Plant";
+            break;
+            case "Undead": enemyType = "Undead";
+            break;
+            default: enemyType = null;
+            break;
+        }
     }
 
     //TODO: Make a few basic enemy classes, goblin, slime, skeleton, etc.
