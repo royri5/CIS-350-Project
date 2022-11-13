@@ -6,9 +6,9 @@ public class Shield extends Items {
         defense = 0;
     }
 
-    public Shield(String n, int d) {
-        setName(n);
-        setDefense(d);
+    public Shield(String name, int def) {
+        setName(name);
+        setDefense(def);
     }
 
     public int getDefense() {
@@ -19,9 +19,9 @@ public class Shield extends Items {
         }
     }
 
-    public void setDefense(int d) {
-        if(d >= 0) {
-            defense = d;
+    public void setDefense(int def) {
+        if(def >= 0) {
+            defense = def;
         } else {
             defense = 0;
         }
