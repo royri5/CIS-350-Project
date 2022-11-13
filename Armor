@@ -9,10 +9,10 @@ public class Armor extends Items {
         defense = 0;
     }
 
-    public Armor(String n, String s, int d) {
-        setName(n);
-        slot = s;
-        defense = d;
+    public Armor(String name, String s, int def) {
+        setName(name);
+        setSlot(s);
+        setDefense(def);
     }
 
     public String getSlot() {
@@ -40,9 +40,9 @@ public class Armor extends Items {
         }
     }
 
-    public void setDefense(int d) {
-        if(d >= 0) {
-            defense = d;
+    public void setDefense(int def) {
+        if(def >= 0) {
+            defense = def;
         } else {
             defense = 0;
         }
