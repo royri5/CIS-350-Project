@@ -10,7 +10,7 @@ public class Player extends Entity{
     public Player() {
         setHp(100);
         setMaxHp(100);
-        setLevel(1);
+        //setLevel(1);
         setDefense(0);
         setDamage("");
         setXp(0);
@@ -22,7 +22,7 @@ public class Player extends Entity{
         setShield(null);
     }
 
-    public Player(int h, int x, int l, int g, 
+    public Player(int h, int x, int g, 
     Armor he, Armor b, Armor le, Weapon w, Shield s) {
         //hp = h;
         xp = x;
@@ -58,9 +58,9 @@ public class Player extends Entity{
     }
 
     //may be phased out
-    public void levelUp() {
-        setLevel(getLevel() + 1);
-    }
+    //public void levelUp() {
+    //    setLevel(getLevel() + 1);
+    //}
 
     //may be phased out alongside NPCs
     public int getGold() {
@@ -333,6 +333,8 @@ public class Player extends Entity{
                 //update player head slot
                 head = null;
             }
+            //may be wrong
+            return;
         }
         //can only set head slot to head armor
         if(armor.getSlot().equals("Head")) {
@@ -364,6 +366,8 @@ public class Player extends Entity{
                 //update player body slot
                 body = null;
             }
+            //may be wrong
+            return;
         }
         //can only set body slot to body armor
         if(armor.getSlot().equals("Body")) {
@@ -395,6 +399,8 @@ public class Player extends Entity{
                 //update player legs slot
                 legs = null;
             }
+            //may be wrong
+            return;
         }
         //can only set legs slot to legs armor
         if(armor.getSlot().equals("Legs")) {
@@ -420,7 +426,12 @@ public class Player extends Entity{
         //updates player weapon slot
         weapon = newWeapon;
         //update player damage
-        setDamage(newWeapon.getDamage());
+        if(newWeapon != null){
+            setDamage(newWeapon.getDamage());
+        } else {
+            setDamage("");
+        }
+        
         //TODO: implement damage increase for two handing
     }
 
@@ -431,12 +442,16 @@ public class Player extends Entity{
             //update player shield slot
             shield = newShield;
             //update player defense
-            addDefense(newShield.getDefense());
+            if(newShield != null) {
+                addDefense(newShield.getDefense());
+            }
         //shield slot is not empty
         } else {
             //update player defense
             removeDefense(shield.getDefense());
-            addDefense(newShield.getDefense());
+            if(newShield != null) {
+                addDefense(newShield.getDefense());
+            }
             //update player shield slot
             shield = newShield;
         }
