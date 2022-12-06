@@ -4,7 +4,7 @@ public class Enemy extends Entity{
     public Enemy() {
         setHp(100);
         setMaxHp(100);
-        setLevel(1);
+        //setLevel(1);
         setDefense(0);
         setDamage("");
         setEnemyType("");
