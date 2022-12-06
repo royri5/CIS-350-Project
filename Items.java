@@ -5,6 +5,10 @@ public class Items {
         name = "N/A";
     }
 
+    public Items(String name) {
+        setName(name);
+    }
+
     public String getName() {
         return name;
     }
