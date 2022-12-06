@@ -1,7 +1,7 @@
 public class Entity {
     private int hp;
     private int maxhp;
-    private int level;
+    //private int level;
     private int defense;
     private String damage;
 
@@ -10,9 +10,9 @@ public class Entity {
 
     //base constructor
     public Entity() {
-        setHp(100);
         setMaxHp(100);
-        setLevel(1);
+        setHp(100);
+        //setLevel(1);
         setDefense(0);
         setDamage("");
         
@@ -59,12 +59,18 @@ public class Entity {
                 hp = newMax;
                 maxhp = newMax;
             }
+        } else {
+            hp = 1;
+            maxhp = 1;
         }
     }
 
     //method to be called in combatSystem
     public void takeDamage(int dmg) {
         //check if entity dies
+        if(dmg < 0) {
+            return;
+        }
         if(hp - dmg > 0) {
             hp -= dmg;
         //entity dies
@@ -92,12 +98,12 @@ public class Entity {
     }
 
     //may be removed
-    public int getLevel() {
-        return level;
-    }
+    //public int getLevel() {
+    //    return level;
+    //}
 
     //may be removed 
-    public void setLevel(int newlvl) {
+    /*public void setLevel(int newlvl) {
         //newlvl must be positive integer
         if(newlvl > 0) {
             level = newlvl;
@@ -106,7 +112,7 @@ public class Entity {
         } else {
             level = 1;
         }
-    }
+    }*/
 
     public int getDefense() {
         return defense;
@@ -140,6 +146,9 @@ public class Entity {
         //defense cannot go lower than 0
             //TODO: (diff method/class) if debuffs are implemented
             //remove them upon end of combat to avoid exploits
+        if(def < 0) {
+            return;
+        }
         if(defense - def >= 0) {
             defense -= def;
         //if defense is lowered below 0
@@ -166,6 +175,7 @@ public class Entity {
             case "d12": damage = "d12";
             break;
             default: damage = "";
+            //remember to account for this in attacking
             break;
         }
     }
