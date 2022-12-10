@@ -1,11 +1,12 @@
 package backend;
+
 public class ArmorList {
-    //Armor testHead = Armor(Armor , head, 0);
+    // Armor testHead = Armor(Armor , head, 0);
     public static Armor testHead = new Armor("TestHead", "Head", 10);
     public static Armor testBody = new Armor("TestBody", "Body", 10);
     public static Armor testLegs = new Armor("TestLegs", "Legs", 10);
 
-    //below is new
+    // below is new
     public static Armor leatherHead = new Armor("Leather Cap", "Head", 2);
     public static Armor leatherBody = new Armor("Leather Tunic", "Body", 2);
     public static Armor leatherLegs = new Armor("Leather Trousers", "Legs", 2);
