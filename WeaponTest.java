@@ -1,5 +1,8 @@
+package backend;
+
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
+
 public class WeaponTest {
 
     @Test
@@ -10,7 +13,7 @@ public class WeaponTest {
 
     @Test
     public void testSetName() {
-        Weapon weapon = new Weapon ("TestName", "d8");
+        Weapon weapon = new Weapon("TestName", "d8");
         weapon.setName("NameTest");
         assertTrue(weapon.getName().equals("NameTest"));
     }
@@ -79,5 +82,5 @@ public class WeaponTest {
         weapon.setDamage("d12");
         assertTrue(weapon.getDamage().equals("d12"));
     }
-    
+
 }
