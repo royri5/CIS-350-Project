@@ -1,7 +1,10 @@
+package backend;
+
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
+
 public class EntityTest {
-    
+
     @Test
     public void testGetEntity() {
         Entity entity = new Entity();
