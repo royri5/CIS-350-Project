@@ -1,9 +1,7 @@
-//import static org.junit.Assert.assertEquals;
+package backend;
 
 import static org.junit.Assert.assertTrue;
 
-//import org.junit.AfterClass;
-//import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class DiceTest {
@@ -12,15 +10,15 @@ public class DiceTest {
     public void testd4() {
         Dice d = new Dice("d4");
         int x = d.roll();
-        assertTrue(x >= 1 && x <=4);
+        assertTrue(x >= 1 && x <= 4);
         System.out.println("d4: " + x);
     }
-    
+
     @Test
     public void testd6() {
         Dice d = new Dice("d6");
         int x = d.roll();
-        assertTrue(x >= 1 && x <=6);
+        assertTrue(x >= 1 && x <= 6);
         System.out.println("d6: " + x);
     }
 
