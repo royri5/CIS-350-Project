@@ -1,0 +1,854 @@
+src/entity/Entity.java:1:	ExcessivePublicCount:	ExcessivePublicCount: This class has a bunch of public methods and attributes
+src/entity/Entity.java:14:	CommentRequired:	CommentRequired: Class comments are required
+src/entity/Entity.java:14:	GodClass:	GodClass: Possible God Class (WMC=53, ATFD=22, TCC=6.667%)
+src/entity/Entity.java:14:	ModifiedCyclomaticComplexity:	ModifiedCyclomaticComplexity: The class 'Entity' has a Modified Cyclomatic Complexity of 3 (Highest = 11).
+src/entity/Entity.java:14:	StdCyclomaticComplexity:	StdCyclomaticComplexity: The class 'Entity' has a Standard Cyclomatic Complexity of 3 (Highest = 14).
+src/entity/Entity.java:14:	TooManyFields:	TooManyFields: Too many fields
+src/entity/Entity.java:14:	TooManyMethods:	TooManyMethods: This class has too many methods, consider refactoring it.
+src/entity/Entity.java:16:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the gp field if you want a default access modifier
+src/entity/Entity.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/entity/Entity.java:16:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/entity/Entity.java:16:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/entity/Entity.java:20:	OneDeclarationPerLine:	OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
+src/entity/Entity.java:22:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/entity/Entity.java:26:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/entity/Entity.java:28:	OneDeclarationPerLine:	OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
+src/entity/Entity.java:32:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "down" appears 5 times in this file; the first occurrence is on line 32
+src/entity/Entity.java:36:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'spriteCounter'
+src/entity/Entity.java:40:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'spriteNum'
+src/entity/Entity.java:42:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/entity/Entity.java:48:	OneDeclarationPerLine:	OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
+src/entity/Entity.java:50:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/entity/Entity.java:52:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'collision'
+src/entity/Entity.java:56:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'actionLockCounter'
+src/entity/Entity.java:60:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the dialogues field if you want a default access modifier
+src/entity/Entity.java:60:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/entity/Entity.java:64:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the dialougeIndex field if you want a default access modifier
+src/entity/Entity.java:64:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/entity/Entity.java:64:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'dialougeIndex'
+src/entity/Entity.java:83:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/entity/Entity.java:109:	FieldNamingConventions:	FieldNamingConventions: The field name 'INT' doesn't match '[a-z][a-zA-Z0-9]*'
+src/entity/Entity.java:109:	SuspiciousConstantFieldName:	SuspiciousConstantFieldName: The field name indicates a constant but its modifiers do not
+src/entity/Entity.java:109:	VariableNamingConventions:	VariableNamingConventions: Variables should start with a lowercase character, 'INT' starts with uppercase character.
+src/entity/Entity.java:133:	FieldNamingConventions:	FieldNamingConventions: The field name 'INTMOD' doesn't match '[a-z][a-zA-Z0-9]*'
+src/entity/Entity.java:133:	SuspiciousConstantFieldName:	SuspiciousConstantFieldName: The field name indicates a constant but its modifiers do not
+src/entity/Entity.java:133:	VariableNamingConventions:	VariableNamingConventions: Variables should start with a lowercase character, 'INTMOD' starts with uppercase character.
+src/entity/Entity.java:189:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/entity/Entity.java:189:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/entity/Entity.java:193:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/entity/Entity.java:193:	UncommentedEmptyMethodBody:	UncommentedEmptyMethodBody: Document empty method body
+src/entity/Entity.java:204:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)
+src/entity/Entity.java:211:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "left" appears 4 times in this file; the first occurrence is on line 211
+src/entity/Entity.java:212:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "right" appears 4 times in this file; the first occurrence is on line 212
+src/entity/Entity.java:226:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/entity/Entity.java:227:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/entity/Entity.java:228:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/entity/Entity.java:231:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/entity/Entity.java:232:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)
+src/entity/Entity.java:240:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Entity.java:244:	AvoidDeeplyNestedIfStmts:	AvoidDeeplyNestedIfStmts: Deeply nested if..then statements are hard to read
+src/entity/Entity.java:244:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Entity.java:255:	CognitiveComplexity:	CognitiveComplexity: The method 'draw(Graphics2D)' has a cognitive complexity of 28, current threshold is 15
+src/entity/Entity.java:255:	CyclomaticComplexity:	CyclomaticComplexity: The method 'draw(Graphics2D)' has a cyclomatic complexity of 17.
+src/entity/Entity.java:255:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'g2' is not assigned and could be declared final
+src/entity/Entity.java:255:	ModifiedCyclomaticComplexity:	ModifiedCyclomaticComplexity: The method 'draw' has a Modified Cyclomatic Complexity of 11.
+src/entity/Entity.java:255:	ShortVariable:	ShortVariable: Avoid variables with short names like g2
+src/entity/Entity.java:255:	StdCyclomaticComplexity:	StdCyclomaticComplexity: The method 'draw' has a Standard Cyclomatic Complexity of 14.
+src/entity/Entity.java:257:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '257'-'270').
+src/entity/Entity.java:257:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '257'-'273').
+src/entity/Entity.java:257:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '257'-'279').
+src/entity/Entity.java:257:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '257'-'282').
+src/entity/Entity.java:257:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '257'-'288').
+src/entity/Entity.java:257:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '257'-'291').
+src/entity/Entity.java:257:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '257'-'297').
+src/entity/Entity.java:257:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '257'-'300').
+src/entity/Entity.java:257:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'image' (lines '257'-'307').
+src/entity/Entity.java:259:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'screenX' (lines '259'-'307').
+src/entity/Entity.java:259:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'screenX' could be declared final
+src/entity/Entity.java:260:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'screenY' (lines '260'-'307').
+src/entity/Entity.java:260:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'screenY' could be declared final
+src/entity/Entity.java:267:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)
+src/entity/Entity.java:270:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '270'-'273').
+src/entity/Entity.java:272:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Entity.java:279:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '279'-'282').
+src/entity/Entity.java:281:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Entity.java:288:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '288'-'291').
+src/entity/Entity.java:290:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Entity.java:297:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '297'-'300').
+src/entity/Entity.java:299:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Entity.java:308:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/entity/Entity.java:308:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'imagepath' is not assigned and could be declared final
+src/entity/Entity.java:309:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'uTool' could be declared final
+src/entity/Entity.java:310:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '310'-'313').
+src/entity/Entity.java:313:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/entity/Entity.java:315:	EmptyCatchBlock:	EmptyCatchBlock: Avoid empty catch blocks
+src/entity/Entity.java:321:	CommentRequired:	CommentRequired: Field comments are required
+src/entity/Entity.java:321:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/entity/Entity.java:323:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'd' is not assigned and could be declared final
+src/entity/Entity.java:323:	ShortVariable:	ShortVariable: Avoid variables with short names like d
+src/entity/Entity.java:333:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/entity/Entity.java:334:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/entity/Entity.java:335:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/entity/Entity.java:336:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/entity/Entity.java:337:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/entity/Entity.java:338:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/entity/Entity.java:339:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/entity/Entity.java:340:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/entity/Entity.java:341:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/entity/Entity.java:342:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/entity/Entity.java:343:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/entity/Entity.java:344:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/entity/Entity.java:345:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/entity/Entity.java:346:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/entity/Entity.java:347:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/entity/Entity.java:348:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/entity/Entity.java:359:	ShortMethodName:	ShortMethodName: Avoid using short method names
+src/entity/Entity.java:360:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/entity/Entity.java:360:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/entity/Entity.java:369:	ShortMethodName:	ShortMethodName: Avoid using short method names
+src/entity/Entity.java:370:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/entity/Entity.java:370:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/entity/Entity.java:378:	ShortMethodName:	ShortMethodName: Avoid using short method names
+src/entity/Entity.java:379:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/entity/Entity.java:379:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/entity/Entity.java:388:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/entity/Entity.java:388:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/entity/Entity.java:397:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/entity/Entity.java:397:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/entity/Entity.java:406:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/entity/Entity.java:406:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/entity/Entity.java:415:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'n' could be declared final
+src/entity/Entity.java:415:	ShortVariable:	ShortVariable: Avoid variables with short names like n
+src/entity/NPC_Farmer.java:7:	ClassNamingConventions:	ClassNamingConventions: The class name 'NPC_Farmer' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/entity/NPC_Farmer.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/entity/NPC_Farmer.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/entity/NPC_Farmer.java:9:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/entity/NPC_Farmer.java:9:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/entity/NPC_Farmer.java:14:	ConstructorCallsOverridableMethod:	ConstructorCallsOverridableMethod: Overridable method 'getImage' called during object construction
+src/entity/NPC_Farmer.java:15:	ConstructorCallsOverridableMethod:	ConstructorCallsOverridableMethod: Overridable method 'setDialouge' called during object construction
+src/entity/NPC_Farmer.java:17:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/entity/NPC_Farmer.java:17:	LinguisticNaming:	LinguisticNaming: Linguistics Antipattern - The getter 'getImage' should not return void linguistically
+src/entity/NPC_Farmer.java:28:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/entity/NPC_Farmer.java:33:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/entity/NPC_Farmer.java:33:	MissingOverride:	MissingOverride: The method 'setAction()' is missing an @Override annotation.
+src/entity/NPC_Farmer.java:35:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/NPC_Farmer.java:36:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'random' could be declared final
+src/entity/NPC_Farmer.java:37:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'i' could be declared final
+src/entity/NPC_Farmer.java:37:	ShortVariable:	ShortVariable: Avoid variables with short names like i
+src/entity/NPC_Farmer.java:39:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/NPC_Farmer.java:55:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/entity/NPC_Farmer.java:55:	MissingOverride:	MissingOverride: The method 'speak()' is missing an @Override annotation.
+src/entity/NPC_Farmer.java:55:	UselessOverridingMethod:	UselessOverridingMethod: Overriding method merely calls super
+src/entity/Player.java:3:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.util.Random'
+src/entity/Player.java:3:	UnusedImports:	UnusedImports: Unused import 'java.util.Random'
+src/entity/Player.java:4:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.awt.Color'
+src/entity/Player.java:4:	UnusedImports:	UnusedImports: Unused import 'java.awt.Color'
+src/entity/Player.java:8:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.io.IOException'
+src/entity/Player.java:8:	UnusedImports:	UnusedImports: Unused import 'java.io.IOException'
+src/entity/Player.java:10:	UnnecessaryImport:	UnnecessaryImport: Unused import 'javax.imageio.ImageIO'
+src/entity/Player.java:10:	UnusedImports:	UnusedImports: Unused import 'javax.imageio.ImageIO'
+src/entity/Player.java:15:	UnnecessaryImport:	UnnecessaryImport: Unused import 'main.UtilityTool'
+src/entity/Player.java:15:	UnusedImports:	UnusedImports: Unused import 'main.UtilityTool'
+src/entity/Player.java:21:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/entity/Player.java:25:	ModifiedCyclomaticComplexity:	ModifiedCyclomaticComplexity: The class 'Player' has a Modified Cyclomatic Complexity of 4 (Highest = 14).
+src/entity/Player.java:25:	StdCyclomaticComplexity:	StdCyclomaticComplexity: The class 'Player' has a Standard Cyclomatic Complexity of 4 (Highest = 17).
+src/entity/Player.java:26:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the gp field if you want a default access modifier
+src/entity/Player.java:26:	CommentRequired:	CommentRequired: Field comments are required
+src/entity/Player.java:26:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/entity/Player.java:26:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/entity/Player.java:27:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the keyH field if you want a default access modifier
+src/entity/Player.java:27:	CommentRequired:	CommentRequired: Field comments are required
+src/entity/Player.java:27:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/entity/Player.java:39:	LooseCoupling:	LooseCoupling: Avoid using implementation types like 'ArrayList'; use the interface instead
+src/entity/Player.java:43:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/entity/Player.java:50:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/entity/Player.java:50:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'keyH' is not assigned and could be declared final
+src/entity/Player.java:50:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/entity/Player.java:67:	ConstructorCallsOverridableMethod:	ConstructorCallsOverridableMethod: Overridable method 'setDeafaultValues' called during object construction
+src/entity/Player.java:68:	ConstructorCallsOverridableMethod:	ConstructorCallsOverridableMethod: Overridable method 'getPlayerImage' called during object construction
+src/entity/Player.java:69:	ConstructorCallsOverridableMethod:	ConstructorCallsOverridableMethod: Overridable method 'setItems' called during object construction
+src/entity/Player.java:79:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "down" appears 4 times in this file; the first occurrence is on line 79
+src/entity/Player.java:157:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'holder' could be declared final
+src/entity/Player.java:172:	LinguisticNaming:	LinguisticNaming: Linguistics Antipattern - The getter 'getPlayerImage' should not return void linguistically
+src/entity/Player.java:189:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/entity/Player.java:191:	CognitiveComplexity:	CognitiveComplexity: The method 'update()' has a cognitive complexity of 18, current threshold is 15
+src/entity/Player.java:191:	CyclomaticComplexity:	CyclomaticComplexity: The method 'update()' has a cyclomatic complexity of 17.
+src/entity/Player.java:191:	MissingOverride:	MissingOverride: The method 'update()' is missing an @Override annotation.
+src/entity/Player.java:191:	ModifiedCyclomaticComplexity:	ModifiedCyclomaticComplexity: The method 'update' has a Modified Cyclomatic Complexity of 11.
+src/entity/Player.java:191:	StdCyclomaticComplexity:	StdCyclomaticComplexity: The method 'update' has a Standard Cyclomatic Complexity of 14.
+src/entity/Player.java:193:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/entity/Player.java:193:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/entity/Player.java:193:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/entity/Player.java:193:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/entity/Player.java:194:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/entity/Player.java:198:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/entity/Player.java:202:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/entity/Player.java:206:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/entity/Player.java:212:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/entity/Player.java:215:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/entity/Player.java:215:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'objIndex' could be declared final
+src/entity/Player.java:219:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/entity/Player.java:219:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'npcIndex' could be declared final
+src/entity/Player.java:223:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/entity/Player.java:229:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/entity/Player.java:230:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)
+src/entity/Player.java:248:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Player.java:252:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Player.java:265:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'i' is not assigned and could be declared final
+src/entity/Player.java:265:	ShortVariable:	ShortVariable: Avoid variables with short names like i
+src/entity/Player.java:266:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Player.java:266:	EmptyControlStatement:	EmptyControlStatement: Empty if statement
+src/entity/Player.java:266:	EmptyIfStmt:	EmptyIfStmt: Avoid empty if statements
+src/entity/Player.java:275:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'i' is not assigned and could be declared final
+src/entity/Player.java:275:	ShortVariable:	ShortVariable: Avoid variables with short names like i
+src/entity/Player.java:276:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Player.java:277:	CollapsibleIfStatements:	CollapsibleIfStatements: These nested if statements could be combined
+src/entity/Player.java:289:	CognitiveComplexity:	CognitiveComplexity: The method 'draw(Graphics2D)' has a cognitive complexity of 25, current threshold is 15
+src/entity/Player.java:289:	CyclomaticComplexity:	CyclomaticComplexity: The method 'draw(Graphics2D)' has a cyclomatic complexity of 17.
+src/entity/Player.java:289:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'g2' is not assigned and could be declared final
+src/entity/Player.java:289:	MissingOverride:	MissingOverride: The method 'draw(Graphics2D)' is missing an @Override annotation.
+src/entity/Player.java:289:	ModifiedCyclomaticComplexity:	ModifiedCyclomaticComplexity: The method 'draw' has a Modified Cyclomatic Complexity of 14.
+src/entity/Player.java:289:	ShortVariable:	ShortVariable: Avoid variables with short names like g2
+src/entity/Player.java:289:	StdCyclomaticComplexity:	StdCyclomaticComplexity: The method 'draw' has a Standard Cyclomatic Complexity of 17.
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'294').
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'297').
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'300').
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'305').
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'308').
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'311').
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'316').
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'319').
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'322').
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'327').
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'330').
+src/entity/Player.java:290:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '290'-'333').
+src/entity/Player.java:291:	SwitchDensity:	SwitchDensity: A high ratio of statements to labels in a switch statement.  Consider refactoring.
+src/entity/Player.java:291:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)
+src/entity/Player.java:294:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '294'-'297').
+src/entity/Player.java:294:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '294'-'300').
+src/entity/Player.java:296:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Player.java:297:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '297'-'300').
+src/entity/Player.java:299:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Player.java:305:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '305'-'308').
+src/entity/Player.java:305:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '305'-'311').
+src/entity/Player.java:307:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Player.java:308:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '308'-'311').
+src/entity/Player.java:310:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Player.java:316:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '316'-'319').
+src/entity/Player.java:316:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '316'-'322').
+src/entity/Player.java:318:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Player.java:319:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '319'-'322').
+src/entity/Player.java:321:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Player.java:327:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '327'-'330').
+src/entity/Player.java:327:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '327'-'333').
+src/entity/Player.java:329:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/entity/Player.java:330:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'image' (lines '330'-'333').
+src/entity/Player.java:332:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/main/AssetSetter.java:4:	UnnecessaryImport:	UnnecessaryImport: Unused import 'object.OBJ_Chest'
+src/main/AssetSetter.java:4:	UnusedImports:	UnusedImports: Unused import 'object.OBJ_Chest'
+src/main/AssetSetter.java:6:	UnnecessaryImport:	UnnecessaryImport: Unused import 'object.OBJ_Key'
+src/main/AssetSetter.java:6:	UnusedImports:	UnusedImports: Unused import 'object.OBJ_Key'
+src/main/AssetSetter.java:13:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the gp field if you want a default access modifier
+src/main/AssetSetter.java:13:	CommentRequired:	CommentRequired: Field comments are required
+src/main/AssetSetter.java:13:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/AssetSetter.java:13:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/main/AssetSetter.java:17:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/main/AssetSetter.java:17:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/main/CollisionChecker.java:5:	CommentRequired:	CommentRequired: Class comments are required
+src/main/CollisionChecker.java:5:	ModifiedCyclomaticComplexity:	ModifiedCyclomaticComplexity: The class 'CollisionChecker' has a Modified Cyclomatic Complexity of 8 (Highest = 16).
+src/main/CollisionChecker.java:5:	StdCyclomaticComplexity:	StdCyclomaticComplexity: The class 'CollisionChecker' has a Standard Cyclomatic Complexity of 10 (Highest = 19).
+src/main/CollisionChecker.java:6:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the gp field if you want a default access modifier
+src/main/CollisionChecker.java:6:	CommentRequired:	CommentRequired: Field comments are required
+src/main/CollisionChecker.java:6:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/CollisionChecker.java:6:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/main/CollisionChecker.java:8:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/CollisionChecker.java:8:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/main/CollisionChecker.java:8:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/main/CollisionChecker.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/CollisionChecker.java:11:	CyclomaticComplexity:	CyclomaticComplexity: The method 'checkTile(Entity)' has a cyclomatic complexity of 13.
+src/main/CollisionChecker.java:11:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'entity' is not assigned and could be declared final
+src/main/CollisionChecker.java:12:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'entityLeftWorldX' could be declared final
+src/main/CollisionChecker.java:13:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'entityRightWorldX' could be declared final
+src/main/CollisionChecker.java:14:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'entityTopWorldY' could be declared final
+src/main/CollisionChecker.java:15:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'entityBottomWorldY' could be declared final
+src/main/CollisionChecker.java:15:	LongVariable:	LongVariable: Avoid excessively long variable names like entityBottomWorldY
+src/main/CollisionChecker.java:17:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'entityLeftCol' (lines '17'-'42').
+src/main/CollisionChecker.java:17:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'entityLeftCol' (lines '17'-'59').
+src/main/CollisionChecker.java:18:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'entityRightCol' (lines '18'-'50').
+src/main/CollisionChecker.java:18:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'entityRightCol' (lines '18'-'59').
+src/main/CollisionChecker.java:19:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'entityTopRow' (lines '19'-'26').
+src/main/CollisionChecker.java:19:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'entityTopRow' (lines '19'-'59').
+src/main/CollisionChecker.java:20:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'entityBottomRow' (lines '20'-'34').
+src/main/CollisionChecker.java:20:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'entityBottomRow' (lines '20'-'59').
+src/main/CollisionChecker.java:22:	OneDeclarationPerLine:	OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
+src/main/CollisionChecker.java:24:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)
+src/main/CollisionChecker.java:29:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:29:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:33:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "down" appears 4 times in this file; the first occurrence is on line 33
+src/main/CollisionChecker.java:37:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:37:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:41:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "left" appears 4 times in this file; the first occurrence is on line 41
+src/main/CollisionChecker.java:45:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:45:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:49:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "right" appears 4 times in this file; the first occurrence is on line 49
+src/main/CollisionChecker.java:53:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:53:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:60:	CognitiveComplexity:	CognitiveComplexity: The method 'checkObject(Entity, boolean)' has a cognitive complexity of 62, current threshold is 15
+src/main/CollisionChecker.java:60:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/CollisionChecker.java:60:	CyclomaticComplexity:	CyclomaticComplexity: The method 'checkObject(Entity, boolean)' has a cyclomatic complexity of 19.
+src/main/CollisionChecker.java:60:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'player' is not assigned and could be declared final
+src/main/CollisionChecker.java:60:	ModifiedCyclomaticComplexity:	ModifiedCyclomaticComplexity: The method 'checkObject' has a Modified Cyclomatic Complexity of 16.
+src/main/CollisionChecker.java:60:	StdCyclomaticComplexity:	StdCyclomaticComplexity: The method 'checkObject' has a Standard Cyclomatic Complexity of 19.
+src/main/CollisionChecker.java:61:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '61'-'104').
+src/main/CollisionChecker.java:61:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '61'-'115').
+src/main/CollisionChecker.java:61:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '61'-'82').
+src/main/CollisionChecker.java:61:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '61'-'93').
+src/main/CollisionChecker.java:74:	SwitchDensity:	SwitchDensity: A high ratio of statements to labels in a switch statement.  Consider refactoring.
+src/main/CollisionChecker.java:74:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)
+src/main/CollisionChecker.java:77:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/CollisionChecker.java:78:	AvoidDeeplyNestedIfStmts:	AvoidDeeplyNestedIfStmts: Deeply nested if..then statements are hard to read
+src/main/CollisionChecker.java:78:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:81:	AvoidDeeplyNestedIfStmts:	AvoidDeeplyNestedIfStmts: Deeply nested if..then statements are hard to read
+src/main/CollisionChecker.java:81:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:82:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '82'-'104').
+src/main/CollisionChecker.java:82:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '82'-'115').
+src/main/CollisionChecker.java:82:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '82'-'82').
+src/main/CollisionChecker.java:82:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '82'-'93').
+src/main/CollisionChecker.java:88:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/CollisionChecker.java:89:	AvoidDeeplyNestedIfStmts:	AvoidDeeplyNestedIfStmts: Deeply nested if..then statements are hard to read
+src/main/CollisionChecker.java:89:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:92:	AvoidDeeplyNestedIfStmts:	AvoidDeeplyNestedIfStmts: Deeply nested if..then statements are hard to read
+src/main/CollisionChecker.java:92:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:93:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '93'-'104').
+src/main/CollisionChecker.java:93:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '93'-'115').
+src/main/CollisionChecker.java:93:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '93'-'82').
+src/main/CollisionChecker.java:93:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '93'-'93').
+src/main/CollisionChecker.java:99:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/CollisionChecker.java:100:	AvoidDeeplyNestedIfStmts:	AvoidDeeplyNestedIfStmts: Deeply nested if..then statements are hard to read
+src/main/CollisionChecker.java:100:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:103:	AvoidDeeplyNestedIfStmts:	AvoidDeeplyNestedIfStmts: Deeply nested if..then statements are hard to read
+src/main/CollisionChecker.java:103:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:104:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '104'-'104').
+src/main/CollisionChecker.java:104:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '104'-'115').
+src/main/CollisionChecker.java:104:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '104'-'82').
+src/main/CollisionChecker.java:104:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '104'-'93').
+src/main/CollisionChecker.java:110:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/CollisionChecker.java:111:	AvoidDeeplyNestedIfStmts:	AvoidDeeplyNestedIfStmts: Deeply nested if..then statements are hard to read
+src/main/CollisionChecker.java:111:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:114:	AvoidDeeplyNestedIfStmts:	AvoidDeeplyNestedIfStmts: Deeply nested if..then statements are hard to read
+src/main/CollisionChecker.java:114:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/CollisionChecker.java:115:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '115'-'104').
+src/main/CollisionChecker.java:115:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '115'-'115').
+src/main/CollisionChecker.java:115:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '115'-'82').
+src/main/CollisionChecker.java:115:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '115'-'93').
+src/main/CollisionChecker.java:132:	CognitiveComplexity:	CognitiveComplexity: The method 'checkEntity(Entity, Entity)' has a cognitive complexity of 22, current threshold is 15
+src/main/CollisionChecker.java:132:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/CollisionChecker.java:132:	CyclomaticComplexity:	CyclomaticComplexity: The method 'checkEntity(Entity, Entity)' has a cyclomatic complexity of 11.
+src/main/CollisionChecker.java:132:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'target' is not assigned and could be declared final
+src/main/CollisionChecker.java:132:	StdCyclomaticComplexity:	StdCyclomaticComplexity: The method 'checkEntity' has a Standard Cyclomatic Complexity of 11.
+src/main/CollisionChecker.java:132:	UseVarargs:	UseVarargs: Consider using varargs for methods or constructors which take an array the last parameter.
+src/main/CollisionChecker.java:133:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '133'-'151').
+src/main/CollisionChecker.java:133:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '133'-'158').
+src/main/CollisionChecker.java:133:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '133'-'165').
+src/main/CollisionChecker.java:133:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '133'-'172').
+src/main/CollisionChecker.java:146:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)
+src/main/CollisionChecker.java:149:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/CollisionChecker.java:151:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '151'-'151').
+src/main/CollisionChecker.java:151:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '151'-'158').
+src/main/CollisionChecker.java:151:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '151'-'165').
+src/main/CollisionChecker.java:151:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '151'-'172').
+src/main/CollisionChecker.java:156:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/CollisionChecker.java:158:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '158'-'151').
+src/main/CollisionChecker.java:158:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '158'-'158').
+src/main/CollisionChecker.java:158:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '158'-'165').
+src/main/CollisionChecker.java:158:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '158'-'172').
+src/main/CollisionChecker.java:163:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/CollisionChecker.java:165:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '165'-'151').
+src/main/CollisionChecker.java:165:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '165'-'158').
+src/main/CollisionChecker.java:165:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '165'-'165').
+src/main/CollisionChecker.java:165:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '165'-'172').
+src/main/CollisionChecker.java:170:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/CollisionChecker.java:172:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '172'-'151').
+src/main/CollisionChecker.java:172:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '172'-'158').
+src/main/CollisionChecker.java:172:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '172'-'165').
+src/main/CollisionChecker.java:172:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'index' (lines '172'-'172').
+src/main/CollisionChecker.java:188:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/CollisionChecker.java:200:	SwitchStmtsShouldHaveDefault:	SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)
+src/main/CollisionChecker.java:203:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/CollisionChecker.java:209:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/CollisionChecker.java:215:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/CollisionChecker.java:221:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/EventHandler.java:4:	CommentRequired:	CommentRequired: Class comments are required
+src/main/EventHandler.java:5:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the gp field if you want a default access modifier
+src/main/EventHandler.java:5:	CommentRequired:	CommentRequired: Field comments are required
+src/main/EventHandler.java:5:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/EventHandler.java:5:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/main/EventHandler.java:6:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the eventRect field if you want a default access modifier
+src/main/EventHandler.java:6:	CommentRequired:	CommentRequired: Field comments are required
+src/main/EventHandler.java:6:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/EventHandler.java:8:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/EventHandler.java:8:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/main/EventHandler.java:8:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/main/EventHandler.java:30:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/EventHandler.java:32:	SimplifyBooleanExpressions:	SimplifyBooleanExpressions: Avoid unnecessary comparisons in boolean expressions
+src/main/EventHandler.java:35:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/EventHandler.java:35:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'col' is not assigned and could be declared final
+src/main/EventHandler.java:35:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'reqDirection' is not assigned and could be declared final
+src/main/EventHandler.java:35:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'row' is not assigned and could be declared final
+src/main/EventHandler.java:37:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'hit' (lines '37'-'46').
+src/main/EventHandler.java:44:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/EventHandler.java:45:	CollapsibleIfStatements:	CollapsibleIfStatements: These nested if statements could be combined
+src/main/EventHandler.java:45:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/EventHandler.java:45:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/EventHandler.java:58:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/EventHandler.java:58:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'col' is not assigned and could be declared final
+src/main/EventHandler.java:58:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gameState' is not assigned and could be declared final
+src/main/EventHandler.java:58:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'row' is not assigned and could be declared final
+src/main/EventRect.java:5:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/EventRect.java:5:	CommentRequired:	CommentRequired: Class comments are required
+src/main/EventRect.java:5:	MissingSerialVersionUID:	MissingSerialVersionUID: Classes implementing Serializable should set a serialVersionUID
+src/main/EventRect.java:6:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the eventRectDefaultX field if you want a default access modifier
+src/main/EventRect.java:6:	CommentRequired:	CommentRequired: Field comments are required
+src/main/EventRect.java:6:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/EventRect.java:6:	OneDeclarationPerLine:	OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
+src/main/EventRect.java:7:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the eventDone field if you want a default access modifier
+src/main/EventRect.java:7:	CommentRequired:	CommentRequired: Field comments are required
+src/main/EventRect.java:7:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/EventRect.java:7:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'eventDone'
+src/main/GamePanel.java:18:	CommentRequired:	CommentRequired: Class comments are required
+src/main/GamePanel.java:18:	MissingSerialVersionUID:	MissingSerialVersionUID: Classes implementing Serializable should set a serialVersionUID
+src/main/GamePanel.java:18:	TooManyFields:	TooManyFields: Too many fields
+src/main/GamePanel.java:20:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the originalTileSize field if you want a default access modifier
+src/main/GamePanel.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:20:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/GamePanel.java:20:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/GamePanel.java:22:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the scale field if you want a default access modifier
+src/main/GamePanel.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:22:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/GamePanel.java:22:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/GamePanel.java:24:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:25:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:25:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/GamePanel.java:26:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:26:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/GamePanel.java:27:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:28:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:31:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:31:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/GamePanel.java:32:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:32:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/GamePanel.java:37:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the FPS field if you want a default access modifier
+src/main/GamePanel.java:37:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:37:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/GamePanel.java:37:	FieldNamingConventions:	FieldNamingConventions: The field name 'FPS' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/GamePanel.java:37:	SuspiciousConstantFieldName:	SuspiciousConstantFieldName: The field name indicates a constant but its modifiers do not
+src/main/GamePanel.java:37:	VariableNamingConventions:	VariableNamingConventions: Variables should start with a lowercase character, 'FPS' starts with uppercase character.
+src/main/GamePanel.java:40:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the tileM field if you want a default access modifier
+src/main/GamePanel.java:40:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:40:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/GamePanel.java:40:	NonSerializableClass:	NonSerializableClass: The field 'tileM' of serializable class 'main.GamePanel' is of non-serializable type 'tile.TileManager'.
+src/main/GamePanel.java:41:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:41:	NonSerializableClass:	NonSerializableClass: The field 'keyH' of serializable class 'main.GamePanel' is of non-serializable type 'main.KeyHandler'.
+src/main/GamePanel.java:42:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the music field if you want a default access modifier
+src/main/GamePanel.java:42:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:42:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/GamePanel.java:42:	NonSerializableClass:	NonSerializableClass: The field 'music' of serializable class 'main.GamePanel' is of non-serializable type 'main.Sound'.
+src/main/GamePanel.java:43:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the soundeffect field if you want a default access modifier
+src/main/GamePanel.java:43:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:43:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/GamePanel.java:43:	NonSerializableClass:	NonSerializableClass: The field 'soundeffect' of serializable class 'main.GamePanel' is of non-serializable type 'main.Sound'.
+src/main/GamePanel.java:44:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:44:	NonSerializableClass:	NonSerializableClass: The field 'colchecker' of serializable class 'main.GamePanel' is of non-serializable type 'main.CollisionChecker'.
+src/main/GamePanel.java:45:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:45:	NonSerializableClass:	NonSerializableClass: The field 'assetSetter' of serializable class 'main.GamePanel' is of non-serializable type 'main.AssetSetter'.
+src/main/GamePanel.java:46:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:46:	NonSerializableClass:	NonSerializableClass: The field 'ui' of serializable class 'main.GamePanel' is of non-serializable type 'main.UI'.
+src/main/GamePanel.java:46:	ShortVariable:	ShortVariable: Avoid variables with short names like ui
+src/main/GamePanel.java:47:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:47:	NonSerializableClass:	NonSerializableClass: The field 'eHandler' of serializable class 'main.GamePanel' is of non-serializable type 'main.EventHandler'.
+src/main/GamePanel.java:48:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the gameThread field if you want a default access modifier
+src/main/GamePanel.java:48:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:48:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/GamePanel.java:48:	DoNotUseThreads:	DoNotUseThreads: To be compliant to J2EE, a webapp should not use any thread.
+src/main/GamePanel.java:48:	NonSerializableClass:	NonSerializableClass: The field 'gameThread' of serializable class 'main.GamePanel' is of non-serializable type 'java.lang.Thread'.
+src/main/GamePanel.java:52:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:52:	NonSerializableClass:	NonSerializableClass: The field 'player' of serializable class 'main.GamePanel' is of non-serializable type 'entity.Player'.
+src/main/GamePanel.java:53:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:54:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:55:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the entityList field if you want a default access modifier
+src/main/GamePanel.java:55:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:55:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/GamePanel.java:55:	LooseCoupling:	LooseCoupling: Avoid using implementation types like 'ArrayList'; use the interface instead
+src/main/GamePanel.java:57:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:58:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:58:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/GamePanel.java:59:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:59:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/GamePanel.java:60:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:60:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/GamePanel.java:61:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:61:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/GamePanel.java:62:	CommentRequired:	CommentRequired: Field comments are required
+src/main/GamePanel.java:62:	FinalFieldCouldBeStatic:	FinalFieldCouldBeStatic: This final field could be made static
+src/main/GamePanel.java:67:	CallSuperInConstructor:	CallSuperInConstructor: It is a good practice to call super() in a constructor
+src/main/GamePanel.java:67:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/GamePanel.java:75:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/GamePanel.java:85:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/GamePanel.java:86:	DoNotUseThreads:	DoNotUseThreads: To be compliant to J2EE, a webapp should not use any thread.
+src/main/GamePanel.java:90:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/GamePanel.java:90:	MissingOverride:	MissingOverride: The method 'run()' is missing an @Override annotation.
+src/main/GamePanel.java:91:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'drawInterval' could be declared final
+src/main/GamePanel.java:91:	UseUnderscoresInNumericLiterals:	UseUnderscoresInNumericLiterals: Number 1000000000 should separate every third digit with an underscore
+src/main/GamePanel.java:92:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'nextDrawTime' (lines '92'-'117').
+src/main/GamePanel.java:103:	UseUnderscoresInNumericLiterals:	UseUnderscoresInNumericLiterals: Number 1000000 should separate every third digit with an underscore
+src/main/GamePanel.java:113:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/main/GamePanel.java:118:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/GamePanel.java:124:	ForLoopCanBeForeach:	ForLoopCanBeForeach: This for loop can be replaced by a foreach loop
+src/main/GamePanel.java:131:	EmptyControlStatement:	EmptyControlStatement: Empty if statement
+src/main/GamePanel.java:131:	EmptyIfStmt:	EmptyIfStmt: Avoid empty if statements
+src/main/GamePanel.java:136:	CognitiveComplexity:	CognitiveComplexity: The method 'paintComponent(Graphics)' has a cognitive complexity of 16, current threshold is 15
+src/main/GamePanel.java:136:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/GamePanel.java:136:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'g' is not assigned and could be declared final
+src/main/GamePanel.java:136:	MissingOverride:	MissingOverride: The method 'paintComponent(Graphics)' is missing an @Override annotation.
+src/main/GamePanel.java:136:	ShortVariable:	ShortVariable: Avoid variables with short names like g
+src/main/GamePanel.java:139:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'g2' could be declared final
+src/main/GamePanel.java:139:	ShortVariable:	ShortVariable: Avoid variables with short names like g2
+src/main/GamePanel.java:150:	ForLoopCanBeForeach:	ForLoopCanBeForeach: This for loop can be replaced by a foreach loop
+src/main/GamePanel.java:156:	ForLoopCanBeForeach:	ForLoopCanBeForeach: This for loop can be replaced by a foreach loop
+src/main/GamePanel.java:163:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/GamePanel.java:163:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'e1' is not assigned and could be declared final
+src/main/GamePanel.java:163:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'e2' is not assigned and could be declared final
+src/main/GamePanel.java:163:	MissingOverride:	MissingOverride: The method 'compare(Entity, Entity)' is missing an @Override annotation.
+src/main/GamePanel.java:163:	ShortVariable:	ShortVariable: Avoid variables with short names like e1
+src/main/GamePanel.java:163:	ShortVariable:	ShortVariable: Avoid variables with short names like e2
+src/main/GamePanel.java:164:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'result' could be declared final
+src/main/GamePanel.java:165:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'result'
+src/main/GamePanel.java:170:	ForLoopCanBeForeach:	ForLoopCanBeForeach: This for loop can be replaced by a foreach loop
+src/main/GamePanel.java:171:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/GamePanel.java:183:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/GamePanel.java:185:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/GamePanel.java:185:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'i' is not assigned and could be declared final
+src/main/GamePanel.java:185:	ShortVariable:	ShortVariable: Avoid variables with short names like i
+src/main/GamePanel.java:190:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/GamePanel.java:193:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/GamePanel.java:193:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'i' is not assigned and could be declared final
+src/main/GamePanel.java:193:	ShortVariable:	ShortVariable: Avoid variables with short names like i
+src/main/KeyHandler.java:6:	CommentRequired:	CommentRequired: Class comments are required
+src/main/KeyHandler.java:6:	ModifiedCyclomaticComplexity:	ModifiedCyclomaticComplexity: The class 'KeyHandler' has a Modified Cyclomatic Complexity of 5 (Highest = 10).
+src/main/KeyHandler.java:6:	StdCyclomaticComplexity:	StdCyclomaticComplexity: The class 'KeyHandler' has a Standard Cyclomatic Complexity of 5 (Highest = 10).
+src/main/KeyHandler.java:7:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the gp field if you want a default access modifier
+src/main/KeyHandler.java:7:	CommentRequired:	CommentRequired: Field comments are required
+src/main/KeyHandler.java:7:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/KeyHandler.java:7:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/main/KeyHandler.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/KeyHandler.java:8:	OneDeclarationPerLine:	OneDeclarationPerLine: Use one line for each declaration, it enhances code readability.
+src/main/KeyHandler.java:10:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/KeyHandler.java:10:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/main/KeyHandler.java:10:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/main/KeyHandler.java:14:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+src/main/KeyHandler.java:14:	ShortVariable:	ShortVariable: Avoid variables with short names like e
+src/main/KeyHandler.java:14:	UncommentedEmptyMethodBody:	UncommentedEmptyMethodBody: Document empty method body
+src/main/KeyHandler.java:19:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+src/main/KeyHandler.java:19:	ShortVariable:	ShortVariable: Avoid variables with short names like e
+src/main/KeyHandler.java:21:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'code' (lines '21'-'43').
+src/main/KeyHandler.java:21:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'code' could be declared final
+src/main/KeyHandler.java:44:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/KeyHandler.java:44:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'code' is not assigned and could be declared final
+src/main/KeyHandler.java:53:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/main/KeyHandler.java:58:	IfStmtsMustUseBraces:	IfStmtsMustUseBraces: Avoid using if statements without curly braces
+src/main/KeyHandler.java:59:	CollapsibleIfStatements:	CollapsibleIfStatements: These nested if statements could be combined
+src/main/KeyHandler.java:62:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/main/KeyHandler.java:62:	EmptyControlStatement:	EmptyControlStatement: Empty if statement
+src/main/KeyHandler.java:62:	EmptyIfStmt:	EmptyIfStmt: Avoid empty if statements
+src/main/KeyHandler.java:65:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/main/KeyHandler.java:66:	DoNotTerminateVM:	DoNotTerminateVM: System.exit() should not be used in J2EE/JEE apps
+src/main/KeyHandler.java:70:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/KeyHandler.java:70:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'code' is not assigned and could be declared final
+src/main/KeyHandler.java:96:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/KeyHandler.java:96:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'code' is not assigned and could be declared final
+src/main/KeyHandler.java:103:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/KeyHandler.java:103:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'code' is not assigned and could be declared final
+src/main/KeyHandler.java:110:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/KeyHandler.java:110:	CyclomaticComplexity:	CyclomaticComplexity: The method 'characterState(int)' has a cyclomatic complexity of 10.
+src/main/KeyHandler.java:110:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'code' is not assigned and could be declared final
+src/main/KeyHandler.java:110:	ModifiedCyclomaticComplexity:	ModifiedCyclomaticComplexity: The method 'characterState' has a Modified Cyclomatic Complexity of 10.
+src/main/KeyHandler.java:110:	StdCyclomaticComplexity:	StdCyclomaticComplexity: The method 'characterState' has a Standard Cyclomatic Complexity of 10.
+src/main/KeyHandler.java:115:	CollapsibleIfStatements:	CollapsibleIfStatements: These nested if statements could be combined
+src/main/KeyHandler.java:122:	CollapsibleIfStatements:	CollapsibleIfStatements: These nested if statements could be combined
+src/main/KeyHandler.java:129:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/main/KeyHandler.java:129:	CollapsibleIfStatements:	CollapsibleIfStatements: These nested if statements could be combined
+src/main/KeyHandler.java:137:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/main/KeyHandler.java:137:	CollapsibleIfStatements:	CollapsibleIfStatements: These nested if statements could be combined
+src/main/KeyHandler.java:146:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'e' is not assigned and could be declared final
+src/main/KeyHandler.java:146:	ShortVariable:	ShortVariable: Avoid variables with short names like e
+src/main/KeyHandler.java:147:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'code' could be declared final
+src/main/Main.java:4:	CommentRequired:	CommentRequired: Class comments are required
+src/main/Main.java:4:	ShortClassName:	ShortClassName: Avoid short class names like Main
+src/main/Main.java:4:	UseUtilityClass:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/Main.java:5:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/Main.java:5:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/Main.java:6:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'window' could be declared final
+src/main/Main.java:11:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'gamePanel' could be declared final
+src/main/Sound.java:9:	CommentRequired:	CommentRequired: Class comments are required
+src/main/Sound.java:10:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the clip field if you want a default access modifier
+src/main/Sound.java:10:	CommentRequired:	CommentRequired: Field comments are required
+src/main/Sound.java:10:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/Sound.java:11:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the soundURL field if you want a default access modifier
+src/main/Sound.java:11:	CommentRequired:	CommentRequired: Field comments are required
+src/main/Sound.java:11:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/Sound.java:12:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/Sound.java:19:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/Sound.java:19:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'i' is not assigned and could be declared final
+src/main/Sound.java:19:	ShortVariable:	ShortVariable: Avoid variables with short names like i
+src/main/Sound.java:21:	CloseResource:	CloseResource: Ensure that resources like this AudioInputStream object are closed after use
+src/main/Sound.java:21:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'ais' could be declared final
+src/main/Sound.java:25:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/main/Sound.java:25:	EmptyCatchBlock:	EmptyCatchBlock: Avoid empty catch blocks
+src/main/Sound.java:29:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/Sound.java:32:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/Sound.java:35:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:6:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.text.DecimalFormat'
+src/main/UI.java:6:	UnusedImports:	UnusedImports: Unused import 'java.text.DecimalFormat'
+src/main/UI.java:8:	UnnecessaryImport:	UnnecessaryImport: Unused import 'entity.Entity'
+src/main/UI.java:8:	UnusedImports:	UnusedImports: Unused import 'entity.Entity'
+src/main/UI.java:9:	UnnecessaryImport:	UnnecessaryImport: Unused import 'object.OBJ_Key'
+src/main/UI.java:9:	UnusedImports:	UnusedImports: Unused import 'object.OBJ_Key'
+src/main/UI.java:11:	CommentRequired:	CommentRequired: Class comments are required
+src/main/UI.java:11:	ShortClassName:	ShortClassName: Avoid short class names like UI
+src/main/UI.java:12:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the gp field if you want a default access modifier
+src/main/UI.java:12:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UI.java:12:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/UI.java:12:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/main/UI.java:13:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the g2 field if you want a default access modifier
+src/main/UI.java:13:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UI.java:13:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/UI.java:13:	ShortVariable:	ShortVariable: Avoid variables with short names like g2
+src/main/UI.java:14:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the maruMonica field if you want a default access modifier
+src/main/UI.java:14:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UI.java:14:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/UI.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UI.java:15:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'messageOn'
+src/main/UI.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UI.java:17:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the messageCounter field if you want a default access modifier
+src/main/UI.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UI.java:17:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/main/UI.java:17:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'messageCounter'
+src/main/UI.java:18:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UI.java:18:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'gameFinished'
+src/main/UI.java:19:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UI.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UI.java:20:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'commandNum'
+src/main/UI.java:21:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UI.java:21:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'slotCol'
+src/main/UI.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/UI.java:22:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'slotRow'
+src/main/UI.java:24:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:24:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/main/UI.java:24:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/main/UI.java:29:	CloseResource:	CloseResource: Ensure that resources like this InputStream object are closed after use
+src/main/UI.java:29:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'is' could be declared final
+src/main/UI.java:29:	ShortVariable:	ShortVariable: Avoid variables with short names like is
+src/main/UI.java:32:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/main/UI.java:33:	IdenticalCatchBranches:	IdenticalCatchBranches: 'catch' branch identical to 'FontFormatException' branch
+src/main/UI.java:34:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/main/UI.java:38:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:38:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'text' is not assigned and could be declared final
+src/main/UI.java:43:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:43:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'g2' is not assigned and could be declared final
+src/main/UI.java:43:	ShortVariable:	ShortVariable: Avoid variables with short names like g2
+src/main/UI.java:53:	EmptyControlStatement:	EmptyControlStatement: Empty if statement
+src/main/UI.java:53:	EmptyIfStmt:	EmptyIfStmt: Avoid empty if statements
+src/main/UI.java:70:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:72:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/UI.java:74:	ShortVariable:	ShortVariable: Avoid variables with short names like x
+src/main/UI.java:75:	ShortVariable:	ShortVariable: Avoid variables with short names like y
+src/main/UI.java:91:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/UI.java:106:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/main/UI.java:114:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using Literals in Conditional Statements
+src/main/UI.java:120:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:121:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/UI.java:122:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'text' could be declared final
+src/main/UI.java:123:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'x' could be declared final
+src/main/UI.java:123:	ShortVariable:	ShortVariable: Avoid variables with short names like x
+src/main/UI.java:124:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'y' could be declared final
+src/main/UI.java:124:	ShortVariable:	ShortVariable: Avoid variables with short names like y
+src/main/UI.java:128:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:130:	ShortVariable:	ShortVariable: Avoid variables with short names like x
+src/main/UI.java:131:	ShortVariable:	ShortVariable: Avoid variables with short names like y
+src/main/UI.java:132:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'width' could be declared final
+src/main/UI.java:133:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'height' could be declared final
+src/main/UI.java:136:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/UI.java:140:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'line' could be declared final
+src/main/UI.java:146:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:146:	NcssCount:	NcssCount: The method 'drawCharacterScreen()' has a NCSS line count of 75.
+src/main/UI.java:157:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/UI.java:161:	AvoidFinalLocalVariable:	AvoidFinalLocalVariable: Avoid using final local variables, turn them into fields
+src/main/UI.java:185:	UnusedAssignment:	UnusedAssignment: The value assigned to variable 'textY' is never used (overwritten on line 190)
+src/main/UI.java:188:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'tailX' could be declared final
+src/main/UI.java:188:	UselessParentheses:	UselessParentheses: Useless parentheses.
+src/main/UI.java:242:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:244:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'frameX' could be declared final
+src/main/UI.java:245:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'frameY' could be declared final
+src/main/UI.java:246:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'frameWidth' could be declared final
+src/main/UI.java:247:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'frameHeight' could be declared final
+src/main/UI.java:252:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'slotX' (lines '252'-'285').
+src/main/UI.java:253:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'slotY' (lines '253'-'285').
+src/main/UI.java:255:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/UI.java:257:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/UI.java:257:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (static property access)
+src/main/UI.java:261:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'slotX' (lines '261'-'285').
+src/main/UI.java:267:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'cursorX' could be declared final
+src/main/UI.java:268:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'cursorY' could be declared final
+src/main/UI.java:269:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'cursorWidth' could be declared final
+src/main/UI.java:270:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'cursorHeight' could be declared final
+src/main/UI.java:278:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dFrameX' could be declared final
+src/main/UI.java:279:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dFrameY' could be declared final
+src/main/UI.java:280:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'dFrameWidth' (lines '280'-'285').
+src/main/UI.java:280:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dFrameWidth' could be declared final
+src/main/UI.java:280:	UnusedLocalVariable:	UnusedLocalVariable: Avoid unused local variables such as 'dFrameWidth'.
+src/main/UI.java:281:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'dFrameHeight' (lines '281'-'285').
+src/main/UI.java:281:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dFrameHeight' could be declared final
+src/main/UI.java:281:	UnusedLocalVariable:	UnusedLocalVariable: Avoid unused local variables such as 'dFrameHeight'.
+src/main/UI.java:283:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'textX' (lines '283'-'285').
+src/main/UI.java:283:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'textX' could be declared final
+src/main/UI.java:283:	UnusedLocalVariable:	UnusedLocalVariable: Avoid unused local variables such as 'textX'.
+src/main/UI.java:284:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'textY' (lines '284'-'285').
+src/main/UI.java:284:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'textY' could be declared final
+src/main/UI.java:284:	UnusedLocalVariable:	UnusedLocalVariable: Avoid unused local variables such as 'textY'.
+src/main/UI.java:286:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:286:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'height' is not assigned and could be declared final
+src/main/UI.java:286:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'width' is not assigned and could be declared final
+src/main/UI.java:286:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'x' is not assigned and could be declared final
+src/main/UI.java:286:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'y' is not assigned and could be declared final
+src/main/UI.java:286:	ShortVariable:	ShortVariable: Avoid variables with short names like x
+src/main/UI.java:286:	ShortVariable:	ShortVariable: Avoid variables with short names like y
+src/main/UI.java:287:	ShortVariable:	ShortVariable: Avoid variables with short names like c
+src/main/UI.java:296:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:296:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'text' is not assigned and could be declared final
+src/main/UI.java:297:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/UI.java:297:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/UI.java:297:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'length' could be declared final
+src/main/UI.java:298:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'x' could be declared final
+src/main/UI.java:298:	ShortVariable:	ShortVariable: Avoid variables with short names like x
+src/main/UI.java:299:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'x'
+src/main/UI.java:301:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UI.java:301:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'tailX' is not assigned and could be declared final
+src/main/UI.java:301:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'text' is not assigned and could be declared final
+src/main/UI.java:302:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/UI.java:302:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/main/UI.java:302:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'length' could be declared final
+src/main/UI.java:303:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'x' could be declared final
+src/main/UI.java:303:	ShortVariable:	ShortVariable: Avoid variables with short names like x
+src/main/UI.java:304:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'x'
+src/main/UtilityTool.java:5:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/UtilityTool.java:5:	CommentRequired:	CommentRequired: Class comments are required
+src/main/UtilityTool.java:7:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/UtilityTool.java:7:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'height' is not assigned and could be declared final
+src/main/UtilityTool.java:7:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'original' is not assigned and could be declared final
+src/main/UtilityTool.java:7:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'width' is not assigned and could be declared final
+src/main/UtilityTool.java:8:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'scaledImage' could be declared final
+src/main/UtilityTool.java:9:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'g2' could be declared final
+src/main/UtilityTool.java:9:	ShortVariable:	ShortVariable: Avoid variables with short names like g2
+src/main/UtilityTool.java:10:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/main/UtilityTool.java:11:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/object/OBJ_Chainmail.java:5:	ClassNamingConventions:	ClassNamingConventions: The class name 'OBJ_Chainmail' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/object/OBJ_Chainmail.java:5:	CommentRequired:	CommentRequired: Class comments are required
+src/object/OBJ_Chainmail.java:7:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/object/OBJ_Chainmail.java:7:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/object/OBJ_Chainmail.java:7:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/object/OBJ_Chest.java:3:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.io.IOException'
+src/object/OBJ_Chest.java:3:	UnusedImports:	UnusedImports: Unused import 'java.io.IOException'
+src/object/OBJ_Chest.java:5:	UnnecessaryImport:	UnnecessaryImport: Unused import 'javax.imageio.ImageIO'
+src/object/OBJ_Chest.java:5:	UnusedImports:	UnusedImports: Unused import 'javax.imageio.ImageIO'
+src/object/OBJ_Chest.java:10:	ClassNamingConventions:	ClassNamingConventions: The class name 'OBJ_Chest' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/object/OBJ_Chest.java:10:	CommentRequired:	CommentRequired: Class comments are required
+src/object/OBJ_Chest.java:12:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/object/OBJ_Chest.java:12:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/object/OBJ_Chest.java:12:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/object/OBJ_Door.java:3:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.io.IOException'
+src/object/OBJ_Door.java:3:	UnusedImports:	UnusedImports: Unused import 'java.io.IOException'
+src/object/OBJ_Door.java:5:	UnnecessaryImport:	UnnecessaryImport: Unused import 'javax.imageio.ImageIO'
+src/object/OBJ_Door.java:5:	UnusedImports:	UnusedImports: Unused import 'javax.imageio.ImageIO'
+src/object/OBJ_Door.java:10:	ClassNamingConventions:	ClassNamingConventions: The class name 'OBJ_Door' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/object/OBJ_Door.java:10:	CommentRequired:	CommentRequired: Class comments are required
+src/object/OBJ_Door.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/object/OBJ_Door.java:13:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/object/OBJ_Door.java:13:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/object/OBJ_Key.java:3:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.io.IOException'
+src/object/OBJ_Key.java:3:	UnusedImports:	UnusedImports: Unused import 'java.io.IOException'
+src/object/OBJ_Key.java:5:	UnnecessaryImport:	UnnecessaryImport: Unused import 'javax.imageio.ImageIO'
+src/object/OBJ_Key.java:5:	UnusedImports:	UnusedImports: Unused import 'javax.imageio.ImageIO'
+src/object/OBJ_Key.java:10:	ClassNamingConventions:	ClassNamingConventions: The class name 'OBJ_Key' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/object/OBJ_Key.java:10:	CommentRequired:	CommentRequired: Class comments are required
+src/object/OBJ_Key.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/object/OBJ_Key.java:11:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/object/OBJ_Key.java:11:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/object/OBJ_Sheild.java:5:	ClassNamingConventions:	ClassNamingConventions: The class name 'OBJ_Sheild' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/object/OBJ_Sheild.java:5:	CommentRequired:	CommentRequired: Class comments are required
+src/object/OBJ_Sheild.java:7:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/object/OBJ_Sheild.java:7:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/object/OBJ_Sheild.java:7:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/object/OBJ_Shortsword_Normal.java:6:	ClassNamingConventions:	ClassNamingConventions: The class name 'OBJ_Shortsword_Normal' doesn't match '[A-Z][a-zA-Z0-9]*'
+src/object/OBJ_Shortsword_Normal.java:6:	CommentRequired:	CommentRequired: Class comments are required
+src/object/OBJ_Shortsword_Normal.java:7:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/object/OBJ_Shortsword_Normal.java:7:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/object/OBJ_Shortsword_Normal.java:7:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/tile/Tile.java:5:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/tile/Tile.java:5:	CommentRequired:	CommentRequired: Class comments are required
+src/tile/Tile.java:5:	ShortClassName:	ShortClassName: Avoid short class names like Tile
+src/tile/Tile.java:6:	CommentRequired:	CommentRequired: Field comments are required
+src/tile/Tile.java:7:	CommentRequired:	CommentRequired: Field comments are required
+src/tile/Tile.java:7:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'collision'
+src/tile/TileManager.java:14:	CommentRequired:	CommentRequired: Class comments are required
+src/tile/TileManager.java:15:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the gp field if you want a default access modifier
+src/tile/TileManager.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/tile/TileManager.java:15:	DefaultPackage:	DefaultPackage: Use explicit scoping instead of the default package private level
+src/tile/TileManager.java:15:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/tile/TileManager.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/tile/TileManager.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/tile/TileManager.java:19:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/tile/TileManager.java:19:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gp' is not assigned and could be declared final
+src/tile/TileManager.java:19:	ShortVariable:	ShortVariable: Avoid variables with short names like gp
+src/tile/TileManager.java:26:	ConstructorCallsOverridableMethod:	ConstructorCallsOverridableMethod: Overridable method 'getTileImage' called during object construction
+src/tile/TileManager.java:27:	ConstructorCallsOverridableMethod:	ConstructorCallsOverridableMethod: Overridable method 'loadMap' called during object construction
+src/tile/TileManager.java:30:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/tile/TileManager.java:30:	LinguisticNaming:	LinguisticNaming: Linguistics Antipattern - The getter 'getTileImage' should not return void linguistically
+src/tile/TileManager.java:33:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "grass00" appears 11 times in this file; the first occurrence is on line 33
+src/tile/TileManager.java:78:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/tile/TileManager.java:78:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'collision' is not assigned and could be declared final
+src/tile/TileManager.java:78:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'imageName' is not assigned and could be declared final
+src/tile/TileManager.java:78:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'index' is not assigned and could be declared final
+src/tile/TileManager.java:80:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'uTool' could be declared final
+src/tile/TileManager.java:84:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/tile/TileManager.java:88:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/tile/TileManager.java:91:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/tile/TileManager.java:91:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'filepath' is not assigned and could be declared final
+src/tile/TileManager.java:93:	CloseResource:	CloseResource: Ensure that resources like this InputStream object are closed after use
+src/tile/TileManager.java:93:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (method chain calls)
+src/tile/TileManager.java:93:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'is' could be declared final
+src/tile/TileManager.java:93:	ShortVariable:	ShortVariable: Avoid variables with short names like is
+src/tile/TileManager.java:94:	CloseResource:	CloseResource: Ensure that resources like this InputStream object are closed after use
+src/tile/TileManager.java:94:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'br' could be declared final
+src/tile/TileManager.java:94:	ShortVariable:	ShortVariable: Avoid variables with short names like br
+src/tile/TileManager.java:100:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'line' (lines '100'-'100').
+src/tile/TileManager.java:100:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'line' (lines '100'-'119').
+src/tile/TileManager.java:100:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'line' could be declared final
+src/tile/TileManager.java:103:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/tile/TileManager.java:103:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'numbers' could be declared final
+src/tile/TileManager.java:105:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'num' could be declared final
+src/tile/TileManager.java:116:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/tile/TileManager.java:116:	EmptyCatchBlock:	EmptyCatchBlock: Avoid empty catch blocks
+src/tile/TileManager.java:121:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/tile/TileManager.java:121:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'g2' is not assigned and could be declared final
+src/tile/TileManager.java:121:	ShortVariable:	ShortVariable: Avoid variables with short names like g2
+src/tile/TileManager.java:129:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'tileNum' (lines '129'-'129').
+src/tile/TileManager.java:129:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'tileNum' (lines '129'-'151').
+src/tile/TileManager.java:129:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'tileNum' could be declared final
+src/tile/TileManager.java:131:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'worldX' could be declared final
+src/tile/TileManager.java:132:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'worldY' could be declared final
+src/tile/TileManager.java:133:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'screenX' (lines '133'-'133').
+src/tile/TileManager.java:133:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'screenX' (lines '133'-'151').
+src/tile/TileManager.java:133:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'screenX' could be declared final
+src/tile/TileManager.java:134:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'screenY' (lines '134'-'134').
+src/tile/TileManager.java:134:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'screenY' (lines '134'-'151').
+src/tile/TileManager.java:134:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'screenY' could be declared final
