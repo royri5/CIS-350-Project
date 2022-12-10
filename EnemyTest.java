@@ -1,7 +1,10 @@
+package backend;
+
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
+
 public class EnemyTest {
-    
+
     @Test
     public void testGetEnemyType() {
         Enemy enemy = new Enemy();
